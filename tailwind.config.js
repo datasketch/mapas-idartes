@@ -15,6 +15,7 @@ module.exports = {
         'banner-home-lg': 'url(/images/home/foto_candelaria@2x.png)',
         'agenda-cultural-sm': 'url(/images/home/agenda-cultural.png)',
         'agenda-cultural-lg': 'url(/images/home/agenda-cultural@2x.png)',
+        'mapa-interactivo': 'url(/images/home/mapa-interactivo.png)',
       },
       colors: {
         blue: '#5337F7',
