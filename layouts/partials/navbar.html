@@ -1,3 +1,16 @@
-<header>
-    NAVBAR
+<header class="bg-black py-6 px-4 lg:py-8 lg:px-10 xl:py-12 xl:px-24">
+    <div class="flex justify-between items-center mx-auto xl:container">
+        <a href="{{ relref . "_index.md" }}">
+            <img class="h-12 md:h-16 lg:h-18 xl:h-20" src="/images/logo_mapas.svg" alt="Logo mapas">
+        </a>
+        <nav>
+            <ul class="hidden lg:grid grid-cols-4 lg:gap-x-6 xl:gap-x-8 text-center">
+                {{ range .Site.Menus.main }}
+                <li>
+                    <a class="text-white uppercase text-sm" href="{{ .URL }}">{{ .Title }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </nav>
+    </div>
 </header>
