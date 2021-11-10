@@ -1,0 +1,46 @@
+{{ define "main" }}
+<!-- BANNER GALERIA -->
+<div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+    <picture class="lg:col-start-1 lg:col-end-8 relative">
+        <source srcset="/images/galerias/arte-a-la-ky/banner@2x.png" media="(min-width: 1280px)">
+        <img class="object-cover object-center w-full" srcset="/images/galerias/arte-a-la-ky/banner.png" alt="Galería">
+        <p class="tk-moby-monospaced bg-pink text-white uppercase text-xs p-1 absolute -bottom-3 lg:hidden z-50">
+            Memorias</p>
+        <p
+            class="tk-moby-monospaced bg-pink text-white uppercase text-xs py-1 px-4 absolute lg:-right-20 lg:top-36 xl:top-48 2xl:top-60 hidden lg:block z-50">
+            Memorias</p>
+    </picture>
+    <div class="lg:col-start-8 lg:col-end-13 self-stretch relative" style="background-color: #D8D8D8;">
+        <div class="grid place-items-center h-full">
+            <div class="p-8 md:p-16 xl:px-20">
+                <h1 class="tk-moby text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-2 lg:mb-3 xl:mb-4">
+                    Arte <br> a la KY
+                </h1>
+                <p class="lg:text-lg xl:text-xl mb-4 lg:mb-6 xl:mb-8 lg:w-10/12">
+                    <span class="font-bold">Nov 13 / 2021</span> <br> Carrera 6 # 12 -90
+                </p>
+            </div>
+        </div>
+        <a class="tk-moby font-bold text-sm py-3 px-4 bg-black text-white absolute -bottom-2 left-1/2 transform -translate-x-1/2"
+            href="{{ relref . " memorias.md" }}">Volver a galería</a>
+    </div>
+</div>
+<!-- BANNER GALERIA END -->
+<section class="py-12 lg:py-16 xl:py-20">
+    <div class="mx-auto w-11/12 mb-8 lg:mb-12 xl:mb-16">
+        <div class="relative w-11/12 lg:w-8/12 xl:w-7/12 2xl:w-6/12 mx-auto">
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laogt
+                reet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam. Lorem ipsum dolor sit amet,
+                consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laogt reet dolore magna aliquam
+                erat volutpat. Ut wisi enim ad minim veniam.
+            </p>
+            <img class="absolute -top-2 -left-36 hidden lg:block" src="/images/galerias/sticky-blue.svg" alt="sticky">
+        </div>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-12 gap-x-4 gap-y-8">
+        
+    </div>
+</section>
+{{ end }}
