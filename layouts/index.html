@@ -15,7 +15,7 @@
 {{/* BANNER HOME END */}}
 
 {{/* ¿QUE ES MAPAS? */}}
-<section class="pt-16 pb-32 lg:pt-20 lg:pb-46 xl:pt-24 xl:pb-40">
+<section class="pt-16 pb-32 lg:pt-20 lg:pb-46 xl:pt-24 xl:pb-40 relative">
     <div class="grid grid-cols-1 lg:grid-cols-12 items-center gap-y-16 mx-auto w-10/12 lg:w-full">
         <div class="lg:col-start-2 lg:col-end-8">
             <h2 class="tk-moby uppercase text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-2 lg:mb-3 xl:mb-4">
@@ -39,6 +39,8 @@
                 RUTAS COLABORATIVAS</p>
         </div>
     </div>
+    <img class="absolute -top-32 left-2 md:left-4 lg:left-8 xl:left-16 z-10" src="/images/home/line-stair.svg"
+        alt="stair line">
 </section>
 {{/* ¿QUE ES MAPAS? END */}}
 
@@ -104,7 +106,7 @@
         Buenas <span class="block">Prácticas</span>
     </h2>
     <div
-        class="grid grid-cols-1 lg:grid-cols-12 items-center gap-y-16 mx-auto pb-12 pt-24 lg:pt-40 lg:pb-24 xl:pt-52 w-10/12 lg:w-full">
+        class="grid grid-cols-1 lg:grid-cols-12 items-center gap-y-16 mx-auto pb-12 pt-24 lg:pt-40 lg:pb-24 xl:pt-52 w-10/12 lg:w-full relative">
         <div class="lg:col-start-2 lg:col-end-7">
             <h2 class="tk-moby uppercase text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-2 lg:mb-3 xl:mb-4">
                 Formación <br> Gestores <br> culturales
@@ -116,6 +118,10 @@
             </p>
         </div>
         <img class="lg:col-start-8 lg:col-end-12 mx-auto" src="/images/home/icono-formacion.svg" alt="icono formacion">
+        <img class="absolute top-20 lg:top-36 xl:top-52 -left-4 lg:left-16 xl:left-20 2xl:left-28 z-10"
+            src="/images/home/good-practics-line-left.svg" alt="good practics">
+        <img class="absolute -top-20 lg:-top-20 xl:-top-16 2xl:-top-20 -right-8 md:-right-10 lg:right-6 xl:right-16 2xl:right-32 z-10"
+            src="/images/home/good-practics-line-right.svg" alt="good practics">
     </div>
     <div class="py-12 lg:pt-24 lg:pb-16 xl:pt-32 xl:pb-20" style="background-color: #D8D8D87C;">
         <div class="grid grid-cols-1 lg:grid-cols-12 items-center gap-y-16 mx-auto w-10/12 lg:w-full">
@@ -125,7 +131,7 @@
                 <h2 class="tk-moby uppercase text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-2 lg:mb-3 xl:mb-4">
                     Capacitaciones
                 </h2>
-                <p class="lg:text-lg">
+                <p class="lg:text-lg lg:w-10/12">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
                     laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
                     ullamcorper suscipit lobortis nisl ut aliquip ex ea commo.
@@ -134,7 +140,7 @@
         </div>
     </div>
     <div
-        class="grid grid-cols-1 lg:grid-cols-12 items-center gap-y-16 mx-auto w-10/12 lg:w-full py-12 lg:pt-24 lg:pb-16 xl:pt-32 xl:pb-20">
+        class="grid grid-cols-1 lg:grid-cols-12 items-center gap-y-16 mx-auto w-10/12 lg:w-full py-12 lg:pt-24 lg:pb-16 xl:pt-32 xl:pb-20 relative">
         <div class="lg:col-start-2 lg:col-end-7">
             <h2 class="tk-moby uppercase text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-2 lg:mb-3 xl:mb-4">
                 Emprendimientos
@@ -146,6 +152,8 @@
             </p>
         </div>
         <img class="lg:col-start-8 lg:col-end-12 mx-auto" src="/images/home/emprendimientos.svg" alt="icono formacion">
+        <img class="absolute -top-60 lg:-top-68 xl:-top-72 -right-8 md:-right-10 lg:right-6 xl:right-16 2xl:right-32 z-10"
+            src="/images/home/good-practics-line-right.svg" alt="good practics">
     </div>
 </section>
 <section class="relative bg-mapa-interactivo bg-center bg-cover grid place-items-center py-24 lg:py-36 xl:py-48">
@@ -164,6 +172,7 @@
         <img class="lg:col-start-5 lg:col-end-13 mx-auto" src="/images/home/mapa-interactivo.svg"
             alt="Mapa Interactivo">
     </div>
+    <img class="absolute -top-2 right-0 sm:left-1/2" src="/images/home/sticky.svg" alt="sticky">
 </section>
 {{/* BUENAS PRACTICAS END */}}
 
@@ -213,9 +222,10 @@
 </section>
 {{/* AGENDA CULTURAL END */}}
 
-{{/*  BASES DE DATOS  */}}
-<section class="py-24 lg:py-32 xl:py-40">
-    <div class="grid grid-cols-1 lg:grid-cols-12 items-center border-2 border-black py-10 px-6 mx-auto w-10/12 relative">
+{{/* BASES DE DATOS */}}
+<section class="py-24 lg:py-32 xl:py-40 relative">
+    <div
+        class="grid grid-cols-1 lg:grid-cols-12 items-center border-2 border-black py-10 px-6 mx-auto w-10/12 relative">
         <h3 class="tk-moby text-blue text-2xl md:text-3xl lg:text-4xl xl:text-5xl lg:col-start-1 lg:col-end-5">
             Bases <br> de datos
         </h3>
@@ -224,8 +234,11 @@
             lor sit amet, consectetuer adipiscing elit, sed diam nonummy.
         </p>
         <a class="tk-moby font-bold italic text-xs sm:text-sm py-3 px-10 bg-black text-lemon absolute -bottom-6 left-1/2 transform -translate-x-1/2"
-        href="#">Explorar datos</a>
+            href="#">Explorar datos</a>
+        <img class="h-12 md:h-16 absolute -bottom-4 -left-6" src="/images/home/elipse.svg" alt="elipse">
+        <img class="h-12 md:h-16 absolute -bottom-8 -right-32" src="/images/home/sticky-lemon.svg" alt="sticky">
     </div>
+    <img class="absolute left-1/2 transform -translate-x-1/2 top-3 md:top-8 lg:top-12" src="/images/home/three-points.svg" alt="three points">
 </section>
-{{/*  BASES DE DATOS END  */}}
+{{/* BASES DE DATOS END */}}
 {{ end }}

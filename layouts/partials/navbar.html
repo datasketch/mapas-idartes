@@ -7,7 +7,7 @@
             <ul class="hidden lg:grid grid-cols-4 lg:gap-x-6 xl:gap-x-8 text-center">
                 {{ range .Site.Menus.main }}
                 <li>
-                    <a class="text-white uppercase text-sm" href="{{ .URL }}">{{ .Title }}</a>
+                    <a class="text-white uppercase text-sm xl:text-base" href="{{ .URL }}">{{ .Title }}</a>
                 </li>
                 {{ end }}
             </ul>
