@@ -16,6 +16,8 @@ module.exports = {
         'agenda-cultural-sm': 'url(/images/home/agenda-cultural.png)',
         'agenda-cultural-lg': 'url(/images/home/agenda-cultural@2x.png)',
         'mapa-interactivo': 'url(/images/home/mapa-interactivo.png)',
+        'banner-estrategias-sm': 'url(/images/metodologia/que-es-mapas/banner-estrategias.png)',
+        'banner-estrategias-lg': 'url(/images/metodologia/que-es-mapas/banner-estrategias@2x.png)',
       },
       colors: {
         blue: '#5337F7',

@@ -1,3 +1,26 @@
 {{ define "main" }}
-    Explora los datos
+<div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+    <picture class="lg:col-start-1 lg:col-end-6">
+        <source srcset="/images/explora-los-datos/para-los-datos@2x.png" media="(min-width: 1280px)">
+        <img class="w-full" srcset="/images/explora-los-datos/para-los-datos.png" alt="Imagen que es mapas">
+    </picture>
+    <div class="lg:col-start-6 lg:col-end-13 self-stretch relative">
+        <div class="grid place-items-center h-full">
+            <div class="p-8 md:p-16 xl:px-20">
+                <h1 class="tk-moby uppercase text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-4 lg:mb-6 xl:mb-8">
+                    Explora <br> los datos
+                </h1>
+                <p class="lg:text-lg xl:text-xl mb-8 lg:mb-10 xl:mb-12 lg:w-10/12">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam.
+                </p>
+                <a class="tk-moby font-bold text-sm py-3 px-4 bg-black text-white uppercase tracking-widest"
+                href="{{ relref . " memorias.md" }}">Como utilizar esta herramienta</a>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="py-12 lg:py-16 xl:py-20" style="background-color: #D8D8D8;">
+    <img class="w-11/12 mx-auto" src="/images/app.svg" alt="app">
+</section>
 {{ end }}
