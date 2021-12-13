@@ -6,6 +6,44 @@
 }
 
 @layer components {
+    .menu {
+    @apply relative text-white duration-300;
+    }
+    .submenu {
+    @apply absolute opacity-0 invisible bg-black text-left p-6 grid gap-y-4 duration-300;
+    width: 200px;
+    }
+    .menu:hover .submenu {
+    @apply visible opacity-100;
+    }
+    /* SLIDER */
+    .swiper-container {
+        overflow-x: hidden !important;
+        overflow-y: visible !important;
+    }
+   .slider-wrapper {
+    @apply relative px-10;
+   }
+   .slider-next,
+   .slider-prev {
+    @apply absolute top-1/2 transform -translate-y-1/2 w-10 h-10 bg-center bg-contain bg-no-repeat cursor-pointer;
+   }
+   .slider-next {
+    @apply -right-16 xl:-right-32 hidden lg:block;
+    width: 65px;
+    height: 65px;
+    background-image: url("/images/right-arrow.png");
+   }
+   .slider-prev {
+    @apply -left-16 xl:-left-32 hidden lg:block;
+    background-image: url("/images/left-arrow.png");
+    width: 65px;
+    height: 65px;
+   }
+   .slider-prev.swiper-button-disabled,
+   .slider-next.swiper-button-disabled {
+    @apply opacity-30 cursor-not-allowed;
+   }
 }
 
 @layer utilities {

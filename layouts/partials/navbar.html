@@ -6,18 +6,55 @@
         <nav>
             <!-- NAV DESKTOP -->
             <ul class="hidden lg:grid lg:grid-cols-4 lg:gap-x-6 xl:gap-x-8 text-center">
+                {{ $currentPage := . }}
                 {{ range .Site.Menus.main }}
+                {{ $menu_item_url := .URL | relLangURL }}
+                {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
+                {{ if eq $menu_item_url $page_url }}
                 <li>
-                    <a class="text-white uppercase text-sm xl:text-base" href="{{ .URL }}">{{ .Title }}</a>
+                    <a class="text-white uppercase border-b-2 pb-1 border-lemon text-sm xl:text-base"
+                        href="{{ .URL }}">{{ .Title }}</a>
                 </li>
+                {{ else }}
+                {{ if .HasChildren }}
+                <li class="menu">
+                    <p class="uppercase cursor-pointer">
+                        {{ .Pre }}
+                        <span>{{ .Name }}</span>
+                    </p>
+                    <ul class="submenu">
+                        {{ range .Children }}
+                        <li class="pb-1 border-b border-white">
+                            <a class="text-xs" href="{{ .URL }}">{{ .Name }}</a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </li>
+                {{ else }}
+                <li>
+                    <a class="text-white uppercase text-sm xl:text-base pb-1 border-b-2 border-transparent hover:border-lemon duration-300"
+                        href="{{ .URL }}">{{ .Title }}</a>
+                </li>
+                {{ end }}
+                {{ end }}
                 {{ end }}
             </ul>
             <!-- NAV MOBILE -->
             <ul class="nav">
+                {{ $currentPage := . }}
                 {{ range .Site.Menus.main }}
+                {{ $menu_item_url := .URL | relLangURL }}
+                {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
+                {{ if eq $menu_item_url $page_url }}
+                <li class="mb-8">
+                    <a class="text-white uppercase border-b-2 pb-1 border-lemon text-sm xl:text-base"
+                        href="{{ .URL }}">{{ .Title }}</a>
+                </li>
+                {{ else }}
                 <li class="mb-8">
                     <a class="text-white uppercase text-sm xl:text-base" href="{{ .URL }}">{{ .Title }}</a>
                 </li>
+                {{ end }}
                 {{ end }}
             </ul>
         </nav>

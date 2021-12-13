@@ -1,4 +1,0 @@
----
-title: Estadísticas
-layout: estadisticas
----
