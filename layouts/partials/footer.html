@@ -1,6 +1,44 @@
-<footer class="tk-moby bg-black py-8 lg:py-12 xl:py-16 grid place-items-center font-bold text-white text-xl lg:text-2xl xl:text-3xl">
-    INFO FOOTER
+<footer
+    class="tk-moby bg-black py-8 lg:py-12 xl:py-16 grid place-items-center font-bold text-white">
+    <div class="mx-auto w-10/12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 items-center mb-12 lg:mb-16 xl:mb-20 gap-y-12">
+            <div class="lg:col-start-1 lg:col-end-4">
+                <ul class="tk-ibm-plex-mono uppercase text-lg font-light grid gap-y-2">
+                    <li>
+                        <a href="{{ relref . "memorias.md" }}">Memorias</a>
+                    </li>
+                    <li>
+                        <a href="{{ relref . "metodologia.md" }}">Metodología</a>
+                    </li>
+                    <li>
+                        <a href="{{ relref . "explora-los-datos.md" }}">Explora los datos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="lg:col-start-4 lg:col-end-10 self-end">
+                <img class="w-full mx-auto" src="/images/sticky-footer.svg" alt="sticky footer">
+            </div>
+            <div class="lg:col-start-10 lg:col-end-13 lg:ml-auto">
+                <h4 class="tk-ibm-plex-mono uppercase text-lg mb-4">Contáctanos</h4>
+                <a class="block tk-ibm-plex-mono text-xs mb-6" href="mailto:contactenos@idartes.gov.co">contactenos@idartes.gov.co</a>
+                <div class="flex">
+                    <a class="mr-4" href="#">
+                        <img src="/images/twitter-icon.svg" alt="media social">
+                    </a>
+                    <a class="mr-4" href="#">
+                        <img src="/images/facebook-icon.svg" alt="media social">
+                    </a>
+                    <a href="#">
+                        <img src="/images/instagram-icon.svg" alt="media social">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 items-center gap-8">
+            <img class="" src="/images/logo-idartes.svg" alt="logo idartes">
+            <img class="" src="/images/logo-datasketch-footer.svg" alt="logo datasketch">
+            <img class="h-12" src="/images/logo-ck-web.png" alt="logo ck web">
+            <img class="" src="/images/logo-alcaldia-bogota.svg" alt="logo alcaldia bogota">
+        </div>
+    </div>
 </footer>
-<div class="py-4 text-center bg-blue">
-    <img class="mx-auto" src="/images/logo-datasketch.svg" alt="Logo Datasketch">
-</div>

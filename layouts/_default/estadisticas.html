@@ -17,38 +17,38 @@
     </div>
 </div>
 <div class="grid grid-cols-2">
-    <a class="tk-moby-monospaced text-center py-2 lg:py-4 xl:py-6 font-bold text-xl lg:text-2xl xl:text-3xl"
-        href="{{ relref . " explora-los-datos.md" }}" style="background-color: #D7DB2E;">
+    <a class="tk-moby-monospaced text-center py-2 lg:py-4 xl:py-6 font-bold text-xl lg:text-2xl xl:text-3xl bg-black" href="{{ relref . "explora-los-datos.md" }}" style="color: #D7DB2E;">
         mapa de redes
     </a>
-    <a class="tk-moby-monospaced text-center py-2 lg:py-4 xl:py-6 font-bold text-xl lg:text-2xl xl:text-3xl bg-black"
-        href="{{ relref . " estadisticas.md" }}" style="color: #D7DB2E;">
+    <a class="tk-moby-monospaced text-center py-2 lg:py-4 xl:py-6 font-bold text-xl lg:text-2xl xl:text-3xl" href="{{ relref . "estadisticas.md" }}" style="background-color: #D7DB2E;">
         Estadisticas
     </a>
 </div>
-<div style="height: 800px;">
-
-</div>
+<section class="py-12 lg:py-16 xl:py-20 lg:col-start-1 lg:col-end-13" style="background-color: #D8D8D8;">
+    <div class="text-center mb-12">
+        <a class="tk-moby font-bold text-sm py-3 px-4 bg-black text-white uppercase tracking-widest"
+                href="#">Como utilizar esta herramienta</a>
+    </div>
+    <img class="w-11/12 mx-auto" src="/images/app.svg" alt="app">
+</section>
 {{/* BASES DE DATOS */}}
 <section class="py-24 lg:py-32 xl:py-40 relative">
     <div
         class="grid grid-cols-1 lg:grid-cols-12 items-center border-2 border-black py-10 px-6 mx-auto w-10/12 relative">
         <h3 class="tk-moby text-blue text-2xl md:text-3xl lg:text-4xl xl:text-5xl lg:col-start-1 lg:col-end-5">
-            Bases <br> de datos
+            Geoclick
         </h3>
         <p class="lg:text-lg xl:text-xl lg:col-start-6 lg:col-end-11">
             <span class="uppercase text-blue font-bold">GEOCLICK</span>
             lor sit amet, consectetuer adipiscing elit, sed diam nonummy.
         </p>
         <a class="tk-moby font-bold italic text-xs sm:text-sm py-3 px-10 bg-black text-lemon absolute -bottom-6 left-1/2 transform -translate-x-1/2"
-            href="#">Explorar datos</a>
+            href="#">Explorar</a>
         <img class="h-12 md:h-16 absolute -bottom-4 -left-6" src="/images/home/elipse.svg" alt="elipse">
         <img class="h-12 md:h-16 absolute -bottom-8 -right-32" src="/images/home/sticky-lemon.svg" alt="sticky">
     </div>
-    <img class="absolute left-1/2 transform -translate-x-1/2 top-3 md:top-8 lg:top-12"
-        src="/images/home/three-points.svg" alt="three points">
-    <img class="absolute -top-20 lg:-top-24 xl:-top-28 left-0 h-40 lg:h-48 xl:h-56" src="/images/home/purple-stair.svg"
-        alt="purple stair">
+    <img class="absolute left-1/2 transform -translate-x-1/2 top-3 md:top-8 lg:top-12" src="/images/home/three-points.svg" alt="three points">
+    <img class="absolute -top-20 lg:-top-24 xl:-top-28 left-0 h-40 lg:h-48 xl:h-56" src="/images/home/purple-stair.svg" alt="purple stair">
 </section>
 {{/* BASES DE DATOS END */}}
 {{ end }}

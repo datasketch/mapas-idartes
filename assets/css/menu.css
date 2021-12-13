@@ -10,7 +10,6 @@
 .header--active {
     padding: 18px 12px;
 }
-
 @media only screen and (min-width: 1024px) {
     .header {
         padding: 32px 40px;

@@ -24,6 +24,7 @@ module.exports = {
         'mapa-interactivo': 'url(/images/home/mapa-interactivo.png)',
         'banner-estrategias-sm': 'url(/images/metodologia/que-es-mapas/banner-estrategias.png)',
         'banner-estrategias-lg': 'url(/images/metodologia/que-es-mapas/banner-estrategias@2x.png)',
+        'banner-explora-datos-lg': 'url(/images/explora-los-datos/banner-explora-datos-desktop.png)',
       },
       colors: {
         blue: '#5337F7',
