@@ -26,26 +26,21 @@
                     ¿Qué es <span class="block uppercase">mapas?</span>
                 </h2>
                 <p class="lg:text-lg xl:text-xl mb-4 lg:mb-6 xl:mb-8">
-                    El proyecto MAPAS, liderado por la <a class="font-bold" target="_blank"
-                        href="https://www.idartes.gov.co/es/lineas-estrategicas/sostenibilidad-ecosistema-artistico">Línea
-                        de Sostenibilidad del Ecosistema Artístico</a> del Idartes,
-                    busca promover el trabajo colaborativo y la construcción de redes entre artistas, organizaciones,
-                    colectivos y en general entre todas las personas que hacen posibles las prácticas artísticas en
-                    Bogotá desde diferentes roles y oficios. Lo anterior, por medio de una serie de estrategias de
-                    relacionamiento y habitabilidad digital.
+                    El proyecto MAPAS, liderado por la <a class="font-bold" target="_blank" href="https://www.idartes.gov.co/es/lineas-estrategicas/sostenibilidad-ecosistema-artistico">Línea de Sostenibilidad del Ecosistema Artístico</a> del Idartes,
+                    busca promover el trabajo colaborativo y la construcción de redes entre artistas, organizaciones, colectivos y en general entre todas las personas que hacen posibles las prácticas artísticas en Bogotá desde diferentes roles y oficios. Lo anterior, por medio de una serie de estrategias de relacionamiento y habitabilidad digital.
                 </p>
-                <a class="tk-moby font-bold text-sm py-3 px-4 bg-black text-lemon" href="#">Conoce más</a>
+                <a class="tk-moby font-bold text-sm py-3 px-4 bg-black text-lemon" href='{{ relref . "metodologia/que-es-mapas.md" }}'>Conoce más</a>
             </div>
             <div class="lg:col-start-9 lg:col-end-13">
-                <p
-                    class="tk-moby-monospaced text-white bg-gradient-to-r from-blue to-blue-dark py-3 pl-4 rounded-l-xl mb-6">
-                    INNOVACIÓN</p>
-                <p
-                    class="tk-moby-monospaced text-white  bg-gradient-to-r from-pink to-pink-dark py-3 pl-4 rounded-l-xl mb-6">
-                    SOSTENIBILIDAD</p>
-                <p
-                    class="tk-moby-monospaced text-white  bg-gradient-to-r from-lemon to-lemon-dark py-3 pl-4 rounded-l-xl">
-                    RUTAS <br> COLABORATIVAS</p>
+                <p class="tk-moby-monospaced text-white bg-gradient-to-r from-blue to-blue-dark py-3 pl-4 rounded-l-xl mb-6 uppercase">
+                    Innovación
+                </p>
+                <p class="tk-moby-monospaced text-white  bg-gradient-to-r from-pink to-pink-dark py-3 pl-4 rounded-l-xl mb-6 uppercase">
+                    Sostenibilidad
+                </p>
+                <p class="tk-moby-monospaced text-white  bg-gradient-to-r from-lemon to-lemon-dark py-3 pl-4 rounded-l-xl uppercase">
+                    Rutas <br> colaborativas
+                </p>
             </div>
         </div>
     </div>
@@ -61,43 +56,7 @@
         Programas <span class="block">Sostenibilidad</span>
     </h2>
     <div class="mx-auto w-8/12 lg:w-9/12 xl:w-8/12 relative">
-        <div class="slider-wrapper">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    {{ range where .Site.Pages "Section" "programas" }}
-                    <div class="swiper-slide">
-                        <div class="relative">
-                            <picture>
-                                <source srcset="/images/home/foto-slider@2x.png" media="(min-width: 1280px)">
-                                <img srcset="/images/home/foto-slider.png" alt="Imagen sostenibilidad">
-                            </picture>
-                            <div class="p-7 pb-14 bg-white">
-                                <h3 class="lg:text-lg xl:text-2xl font-bold mb-5">
-                                    Laboratorios en Red
-                                </h3>
-                                <p class="lg:text-lg xl:text-xl">
-                                    busca propiciar la co-creación e innovación colaborativa, contribuyendo a la
-                                    sostenibilidad de
-                                    las iniciativas y emprendimientos del ecosistema artístico.
-                                </p>
-                                <a class="tk-moby font-bold italic text-sm py-3 px-10 bg-black text-lemon absolute -bottom-7"
-                                    target="_blank"
-                                    href="https://www.idartes.gov.co/es/lineas-estrategicas/sostenibilidad-ecosistema-artistico/laboratorios-en-red/conv-2021">Ver
-                                    más</a>
-                            </div>
-                            <p
-                                class="tk-moby-monospaced bg-pink text-white uppercase text-xs p-1 absolute -right-4 top-4">
-                                SOSTENIBILIDAD</p>
-                            <img class="absolute bottom-4 right-3 h-8" src="/images/home/stair.png"
-                                alt="icono estrella">
-                        </div>
-                    </div>
-                    {{ end }}
-                </div>
-            </div>
-            <div class="slider-prev"></div>
-            <div class="slider-next"></div>
-        </div>
+        {{ partial "programas.html" . }}
     </div>
 </section>
 {{/* PROGRAMAS SOSTENIBILIDAD END */}}
@@ -115,9 +74,7 @@
                 Formación <br> Gestores <br> culturales
             </h2>
             <p class="lg:text-lg">
-                Formación de gestores culturales desde la apropiación local del arte. Trabajan con todas las localidades
-                y es una estrategia enfocada en fortalecer las prácticas comunitarias con acompañamiento personalizado
-                para orientar la formulación de propuestas financiables.
+                Formación de gestores culturales desde la apropiación local del arte. Trabajan con todas las localidades y es una estrategia enfocada en fortalecer las prácticas comunitarias con acompañamiento personalizado para orientar la formulación de propuestas financiables.
             </p>
         </div>
         <img class="lg:col-start-8 lg:col-end-12 mx-auto" src="/images/home/icono-formacion.svg" alt="icono formacion">
@@ -135,10 +92,7 @@
                     Capacitaciones
                 </h2>
                 <p class="lg:text-lg lg:w-10/12">
-                    Los procesos de aprendizaje deben ser continuos y constantes para poder adaptarse a los cambios que
-                    se van dando en el mundo y aplicarlos al Ecosistema Artístico y cultural. por eso dentro de la
-                    estrategia, se incluyeron algunos espacios de capacitación sobre temas como: tecnología blockchain,
-                    NFTs, Wikis y Wikipedia, Geoclick y Sistemas de Información geográfica.
+                    Los procesos de aprendizaje deben ser continuos y constantes para poder adaptarse a los cambios que se van dando en el mundo y aplicarlos al Ecosistema Artístico y cultural. por eso dentro de la estrategia, se incluyeron algunos espacios de capacitación sobre temas como: tecnología blockchain, NFTs, Wikis y Wikipedia, Geoclick y Sistemas de Información geográfica.
                 </p>
             </div>
         </div>
@@ -150,9 +104,7 @@
                 Emprendimientos
             </h2>
             <p class="lg:text-lg">
-                Emprendimientos locales, entre los que se encuentra el sector editorial, accesorios, obras de arte,
-                tejidos, productos musicales y artesanales, entre otros, presentan una completa oferta de productos y
-                servicios.
+                Emprendimientos locales, entre los que se encuentra el sector editorial, accesorios, obras de arte, tejidos, productos musicales y artesanales, entre otros, presentan una completa oferta de productos y servicios.
             </p>
         </div>
         <img class="lg:col-start-8 lg:col-end-12 mx-auto" src="/images/home/emprendimientos.svg" alt="icono formacion">
@@ -219,8 +171,9 @@
             <span class="uppercase text-blue font-bold">GEOCLICK</span>
             es la herramienta para acceder a los datos del ecosistema artístico y cultural de Bogotá.
         </p>
-        <a class="tk-moby font-bold italic text-xs sm:text-sm py-3 px-10 bg-black text-lemon absolute -bottom-6 left-1/2 transform -translate-x-1/2"
-            href="#">Explorar datos</a>
+        <a class="tk-moby font-bold italic text-xs sm:text-sm py-3 px-10 bg-black text-lemon absolute -bottom-6 left-1/2 transform -translate-x-1/2" href="https://www.arcgis.com/apps/webappviewer/index.html?id=bad12857d5ba471ba506973fc3f35e67" target="_blank">
+            Explorar datos
+        </a>
         <img class="h-12 md:h-16 absolute -bottom-4 -left-6" src="/images/home/elipse.svg" alt="elipse">
         <img class="h-12 md:h-16 absolute -bottom-8 -right-32" src="/images/home/sticky-lemon.svg" alt="sticky">
     </div>
@@ -231,10 +184,12 @@
 </section>
 {{/* BASES DE DATOS END */}}
 {{ end }}
+
 {{ define "head" }}
-<link rel="stylesheet" href="https://unpkg.com/swiper@6.7.0/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.7.0/swiper-bundle.min.css" />
 {{ end }}
+
 {{ define "js" }}
-{{ $home := resources.Get "js/home.js" | js.Build (dict "minify" true) }}
-<script src="{{ $home.Permalink }}"></script>
+    {{ $home := resources.Get "js/home.js" | js.Build (dict "minify" true) }}
+    <script src="{{ $home.Permalink }}"></script>
 {{ end }}

@@ -24,8 +24,9 @@
                     </p>
                     <ul class="submenu">
                         {{ range .Children }}
+                        {{ $goto := or .Page.Params.external_url .URL }}
                         <li class="pb-1 border-b border-white">
-                            <a class="text-xs" href="{{ .URL }}">{{ .Name }}</a>
+                            <a class="text-xs" href="{{ $goto }}" {{ if .Page.Params.external_url }}target="_blank"{{ end }}>{{ .Name }}</a>
                         </li>
                         {{ end }}
                     </ul>

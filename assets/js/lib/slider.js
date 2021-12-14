@@ -4,6 +4,8 @@ import SwiperCore, {
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
+
+// eslint-disable-next-line require-jsdoc
 function setupSlider(el, opts = {}) {
   const wrapperEl = document.querySelector(el);
 
@@ -31,5 +33,4 @@ function setupSlider(el, opts = {}) {
   return swiper;
 }
 
-// eslint-disable-next-line import/prefer-default-export
-export { setupSlider };
+export {setupSlider};
