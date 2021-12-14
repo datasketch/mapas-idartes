@@ -8,14 +8,20 @@
     transition: all .3s;
 }
 .header--active {
-    padding: 18px 12px;
+    padding: 6px 12px;
+}
+.header-logo {
+    @apply h-12 md:h-16;
+}
+.header--active .header-logo {
+    @apply h-10
 }
 @media only screen and (min-width: 1024px) {
     .header {
         padding: 32px 40px;
     }
     .header--active {
-        padding: 24px 36px;
+        padding: 6px 36px;
     }
 }
 
@@ -24,7 +30,7 @@
         padding: 48px 96px;
     }
     .header--active {
-        padding: 40px 92px;
+        padding: 6px 92px;
     }
 }
 

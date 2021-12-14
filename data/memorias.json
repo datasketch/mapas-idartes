@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Plaza Quirigua",
+        "description": "Levantamiento de información primaria de las personas que asistieron al encuentro en la Plaza Quirigua, una apuesta de la estrategia del Programa La Semilla: sostenibilidad, arte y ruralidad. Para esto, propusimos familiarizar a las y los asistentes a las prácticas de mapeo y cartografiar de manera manual información sobre el lugar de vivienda, localidad, consumo cultural, comida, por dónde trabaja, recomendados, entre otros.",
+        "image": "/images/memorias/plaza_quirigua.jpg"
+    },
+    {
+        "title": "Taller NFTs",
+        "description": "Tres conversatorios en modalidad de taller para introducir a los participantes en el tema de NFTs y blockchain. Se repasó la historia de esta tecnología, los últimos desarrollos que ha tenido, así como su uso y aplicación en la protección y comercialización de obras de arte digital.",
+        "image": "/images/memorias/nfts.jpg"
+    },
+    {
+        "title": "Wikitones",
+        "description": "Talleres sobre cómo mejorar la experiencia e historial de usuario de Wikipedia y utilizar estratégicamente a esa herramienta para nutrir los debates sobre la historia y la cultura.",
+        "image": "/images/memorias/wikitones.jpg"
+    },
+    {
+        "title": "Corredores artísticos",
+        "description": "Recolección de información cualitativa en el marco de la ejecución de la beca Es Cultura Local e indagación sobre las relaciones de colaboración que se establecen entre los artistas.",
+        "image": "/images/memorias/corredores_artisticos.jpg"
+    },
+    {
+        "title": "Arte a la KY",
+        "description": "Realización de un mosaico con las imágenes de diversos artistas del espacio público y que pertenecen al programa Arte a la KY en el Teatro Taller de Colombia.",
+        "image": "/images/memorias/arte_ky.jpg"
+    },
+    {
+        "title": "Convocatoria Arte infográfico",
+        "description": "Invitación a artistas para usar datos de Geoclick como materia prima en la creación de propuestas artísticas.",
+        "image": "/images/memorias/galeria/galeria-6@2x.png"
+    }
+]

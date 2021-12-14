@@ -18,9 +18,7 @@
                     Charla <br> ntf's
                 </h1>
                 <p class="lg:text-lg xl:text-xl mb-4 lg:mb-6 xl:mb-8 lg:w-10/12">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                    laogt
-                    reet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+                    Cami Bohórquez, durante dos sesiones nos sumergió en el mundo del blockchain,  cryptotwitter y el arte digital. Gabriel Zea nos contó sobre su experiencia como artista en el ecosistema artístico de Bogotá  y su propuesta <a href="https://ruter.app/" class="underline" target="_blank">Ruter</a>
                 </p>
                 <a class="tk-moby font-bold text-sm py-3 px-8 bg-black text-lemon" href="#">Ver más</a>
             </div>
@@ -28,10 +26,6 @@
         <img class="absolute -bottom-5 hidden lg:block" src="/images/memorias/stair-rounded.svg" alt="stair"
             style="left: -73px;">
     </div>
-    <img class="absolute transform -translate-y-1/2 h-16 left-8 top-1/2 cursor-pointer hidden lg:block"
-        src="/images/left-arrow.png" alt="left arrow">
-    <img class="absolute transform -translate-y-1/2 h-16 right-8 top-1/2 cursor-pointer hidden lg:block"
-        src="/images/right-arrow.png" alt="right arrow">
 </div>
 <!-- BANNER MEMORIAS END -->
 
@@ -48,138 +42,33 @@
         </div>
         <div class=" lg:w-6/12">
             <p class="lg:text-lg xl:text-xl">
-                Bienvenido, en esta galería podrás ver los eventos realizados...Lorem ipsum dolor sit amet, consectetuer
-                adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laogt reet dolore magna aliquam erat.
+                Estos son los momentos destacados de las estrategías pedagógicas implementadas en el proyecto Mapas.
             </p>
         </div>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-20 mx-auto w-10/12 mb-16 lg:mb-32 xl:mb-40">
-        <!-- 1 -->
-        <div class="relative">
-            <picture>
-                <source srcset="/images/memorias/galeria/galeria-1@2x.png" media="(min-width: 1280px)">
-                <img class="object-cover object-center w-full" srcset="/images/memorias/galeria/galeria-1.png"
-                    alt="Galeria 1">
-            </picture>
-            <div class="px-4 pt-5 pb-16" style="background-color: #D8D8D87C;">
-                <h3 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mb-3 lg:mb-5">
-                    Plaza Quirigua
-                </h3>
-                <p class="lg:text-lg xl:text-xl">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                </p>
+        {{ range .Site.Data.memorias }}
+            <div class="relative">
+                <div class="aspect-w-16 aspect-h-9">
+                    <img class="object-cover object-center w-full h-full" src="{{ .image }}" alt="{{ .title }}">
+                </div>
+                <div class="px-4 pt-5 pb-16" style="background-color: #D8D8D87C;">
+                    <h3 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mb-3 lg:mb-5">
+                        {{ .title }}
+                    </h3>
+                    <p class="lg:text-lg xl:text-xl">
+                        {{ .description }}
+                    </p>
+                </div>
+                <ul class="absolute -top-3 left-0">
+                    <li class="tk-moby-monospaced bg-pink text-white uppercase text-xs p-1">Sostenibilidad</li>
+                </ul>
+                <!-- <a class="tk-moby font-bold text-sm py-3 px-8 bg-black text-lemon absolute bottom-0 left-0" href="#">Ver más</a> -->
             </div>
-            <ul class="absolute -top-3 left-0">
-                <li class="tk-moby-monospaced bg-pink text-white uppercase text-xs p-1">Sostenibilidad</li>
-            </ul>
-            <a class="tk-moby font-bold text-sm py-3 px-8 bg-black text-lemon absolute bottom-0 left-0" href="#">Ver más</a>
-        </div>
-        <!-- 2 -->
-        <div class="relative">
-            <picture>
-                <source srcset="/images/memorias/galeria/galeria-2@2x.png" media="(min-width: 1280px)">
-                <img class="object-cover object-center w-full" srcset="/images/memorias/galeria/galeria-2.png"
-                    alt="Galeria 2">
-            </picture>
-            <div class="px-4 pt-5 pb-16" style="background-color: #D8D8D87C;">
-                <h3 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mb-3 lg:mb-5">
-                    Taller NFT’s
-                </h3>
-                <p class="lg:text-lg xl:text-xl">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                </p>
-            </div>
-            <ul class="absolute -top-3 left-0">
-                <li class="tk-moby-monospaced bg-blue text-white uppercase text-xs p-1">Sostenibilidad</li>
-            </ul>
-            <a class="tk-moby font-bold text-sm py-3 px-8 bg-black text-lemon absolute bottom-0 left-0" href="#">Ver más</a>
-        </div>
-        <!-- 3 -->
-        <div class="relative">
-            <picture>
-                <source srcset="/images/memorias/galeria/galeria-3@2x.png" media="(min-width: 1280px)">
-                <img class="object-cover object-center w-full" srcset="/images/memorias/galeria/galeria-3.png"
-                    alt="Galeria 3">
-            </picture>
-            <div class="px-4 pt-5 pb-16" style="background-color: #D8D8D87C;">
-                <h3 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mb-3 lg:mb-5">
-                    Wikitones
-                </h3>
-                <p class="lg:text-lg xl:text-xl">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                </p>
-            </div>
-            <ul class="absolute -top-3 left-0">
-                <li class="tk-moby-monospaced bg-lemon text-white uppercase text-xs p-1">Sostenibilidad</li>
-            </ul>
-            <a class="tk-moby font-bold text-sm py-3 px-8 bg-black text-lemon absolute bottom-0 left-0" href="#">Ver más</a>
-        </div>
-        <!-- 4 -->
-        <div class="relative">
-            <picture>
-                <source srcset="/images/memorias/galeria/galeria-4@2x.png" media="(min-width: 1280px)">
-                <img class="object-cover object-center w-full" srcset="/images/memorias/galeria/galeria-4.png"
-                    alt="Galeria 4">
-            </picture>
-            <div class="px-4 pt-5 pb-16" style="background-color: #D8D8D87C;">
-                <h3 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mb-3 lg:mb-5">
-                    Corredores Astísticos
-                </h3>
-                <p class="lg:text-lg xl:text-xl">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                </p>
-            </div>
-            <ul class="absolute -top-3 left-0">
-                <li class="tk-moby-monospaced bg-lemon text-white uppercase text-xs p-1">Sostenibilidad</li>
-            </ul>
-            <a class="tk-moby font-bold text-sm py-3 px-8 bg-black text-lemon absolute bottom-0 left-0" href="#">Ver más</a>
-        </div>
-        <!-- 5 -->
-        <div class="relative">
-            <picture>
-                <source srcset="/images/memorias/galeria/galeria-5@2x.png" media="(min-width: 1280px)">
-                <img class="object-cover object-center w-full" srcset="/images/memorias/galeria/galeria-5.png"
-                    alt="Galeria 5">
-            </picture>
-            <div class="px-4 pt-5 pb-16" style="background-color: #D8D8D87C;">
-                <h3 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mb-3 lg:mb-5">
-                    Arte a la KY
-                </h3>
-                <p class="mb-3 hidden lg:block">&nbsp;</p>
-                <p class="lg:text-lg xl:text-xl">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                </p>
-            </div>
-            <ul class="absolute -top-3 left-0">
-                <li class="tk-moby-monospaced bg-blue text-white uppercase text-xs p-1 mb-1">Sostenibilidad</li>
-                <li class="tk-moby-monospaced bg-lemon text-white uppercase text-xs p-1 mb-1">Sostenibilidad</li>
-                <li class="tk-moby-monospaced bg-pink text-white uppercase text-xs p-1">Sostenibilidad</li>
-            </ul>
-            <a class="tk-moby font-bold text-sm py-3 px-8 bg-black text-lemon absolute bottom-0 left-0" href="{{ relref . "/galerias/arte-a-la-ky.md" }}">Ver más</a>
-        </div>
-        <!-- 6 -->
-        <div class="relative">
-            <picture>
-                <source srcset="/images/memorias/galeria/galeria-6@2x.png" media="(min-width: 1280px)">
-                <img class="object-cover object-center w-full" srcset="/images/memorias/galeria/galeria-6.png"
-                    alt="Galeria 6">
-            </picture>
-            <div class="px-4 pt-5 pb-16" style="background-color: #D8D8D87C;">
-                <h3 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mb-3 lg:mb-5">
-                    Convocatoria Arte infográfico
-                </h3>
-                <p class="lg:text-lg xl:text-xl">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                </p>
-            </div>
-            <ul class="absolute -top-3 left-0">
-                <li class="tk-moby-monospaced bg-pink text-white uppercase text-xs p-1">Sostenibilidad</li>
-            </ul>
-            <a class="tk-moby font-bold text-sm py-3 px-8 bg-black text-lemon absolute bottom-0 left-0" href="#">Ver más</a>
-        </div>
+        {{ end }}
     </div>
     <div class="text-center relative">
-        <a class="tk-moby uppercase" href="#">Ver más eventos</a>
+        <a class="tk-moby uppercase" href="https://www.idartes.gov.co/es/agenda" target="_blank">Ver más eventos</a>
         <img class="absolute h-4 lg:h-6 xl:h-7 2xl:h-8 top-8 left-8 md:top-0 lg:-top-3 xl:-top-4 lg:left-4 xl:left-24 2xl:left-32" src="/images/memorias/line-shape-left.svg" alt="line shape">
         <img class="absolute h-4 lg:h-6 xl:h-7 2xl:h-8 top-8 right-8 md:top-0 lg:-top-3 xl:-top-4 lg:right-4 xl:right-24 2xl:right-32" src="/images/memorias/line-shape-right.svg" alt="line shape">
     </div>
