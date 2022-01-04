@@ -1,5 +1,5 @@
 <header class="header">
-    <div class="flex justify-between items-center mx-auto xl:container">
+    <div class="flex justify-between items-center">
         <a href='{{ .Site.BaseURL }}'>
             <img class="header-logo" src="/images/logo_mapas.svg" alt="Logo mapas">
         </a>
@@ -41,7 +41,7 @@
                 {{ end }}
             </ul>
             <!-- NAV MOBILE -->
-            <ul class="nav">
+            <ul class="nav lg:hidden">
                 {{ $currentPage := . }}
                 {{ range .Site.Menus.main }}
                 {{ $menu_item_url := .URL | relLangURL }}

@@ -6,9 +6,9 @@
     {{ block "head" . }}{{ end }}
 </head>
 
-<body class="tk-ibm-plex-mono overflow-x-hidden">
+<body class="tk-ibm-plex-mono mx-auto max-w-screen-2xl">
     {{ partial "navbar.html" . }}
-    <main>
+    <main class="overflow-x-hidden">
         {{ block "main" . }}{{ end }}
     </main>
     {{ partial "footer.html" . }}
