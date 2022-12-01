@@ -9,25 +9,27 @@
                     Explora los datos
                 </h1>
                 <p class="lg:text-lg xl:text-xl lg:w-8/12">
-                    Aquí encontrarás la visualización de los datos correspondientes a la información disponible de los programas/ estrategias de la Línea de Sostenibilidad del Idartes.
+                    Aquí encontrarás la visualización de los datos correspondientes a la información disponible de los
+                    programas/ estrategias de la Línea de Sostenibilidad del Idartes.
                 </p>
             </div>
         </div>
     </div>
 </div>
-<div class="grid grid-cols-2">
-    <a class="tk-moby-monospaced text-center py-2 lg:py-4 xl:py-6 font-bold text-xl lg:text-2xl xl:text-3xl" href='{{ relref . " explora-los-datos/mapa-de-redes.md" }}' style="background-color: #D7DB2E;">
-        mapa de redes
-    </a>
-    <a class="tk-moby-monospaced text-center py-2 lg:py-4 xl:py-6 font-bold text-xl lg:text-2xl xl:text-3xl bg-black" href='{{ relref . " explora-los-datos/estadisticas.md" }}' style="color: #D7DB2E;">
-        Estadisticas
-    </a>
-</div>
-<div class="py-12 lg:py-16 xl:py-20">
-    <iframe class="w-11/12 mx-auto h-screen" src="https://datasketch.shinyapps.io/idartes-mapas-redes/" frameborder="0"></iframe>
+
+<div class="mt-12 pb-12 lg:py-16 xl:py-20 space-y-6">
+    <details class="details">
+        <summary class="uppercase  text-white bg-black w-1/3 mx-auto p-2 text-center">cómo utilizar esta herramienta
+        </summary>
+        <p class="w-10/12 mx-auto ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eos magnam eligendi fugiat sed doloribus illo
+            necessitatibus odio soluta id facere repellat numquam minus facilis, deleniti sequi doloremque dolorem qui?
+        </p>
+    </details>
+    <iframe class="w-11/12 mx-auto h-screen" src="https://datasketch.shinyapps.io/idartes-mapas-redes/"
+        frameborder="0"></iframe>
 </div>
 {{/* BASES DE DATOS */}}
-<section class="py-24 lg:py-32 xl:py-40 relative">
+<!-- <section class="py-24 lg:py-32 xl:py-40 relative">
     <div
         class="grid grid-cols-1 lg:grid-cols-12 items-center border-2 border-black py-10 px-6 mx-auto w-10/12 relative">
         <h3 class="tk-moby text-blue text-2xl md:text-3xl lg:text-4xl xl:text-5xl lg:col-start-1 lg:col-end-5">
@@ -44,6 +46,6 @@
         src="/images/home/three-points.svg" alt="three points">
     <img class="absolute -top-20 lg:-top-24 xl:-top-28 left-0 h-40 lg:h-48 xl:h-56" src="/images/home/purple-stair.svg"
         alt="purple stair">
-</section>
+</section> -->
 {{/* BASES DE DATOS END */}}
 {{ end }}

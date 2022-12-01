@@ -28,6 +28,7 @@ module.exports = {
         'pink-dark': '#B52471',
         'lemon': '#D7DB2E',
         'lemon-dark': '#B2B511',
+        'cultured': '#ECECEC',
       },
     },
   },
