@@ -2,29 +2,34 @@
     <div class="swiper-container">
         <div class="swiper-wrapper">
             {{ range .Site.Data.programas }}
-            <div class="swiper-slide">
-                <div class="relative">
-                    <picture>
-                        <source srcset="/images/home/foto-slider@2x.png" media="(min-width: 1280px)">
-                        <img srcset="/images/home/foto-slider.png" alt="Imagen sostenibilidad">
-                    </picture>
-                    <div class="p-7 pb-14 bg-white">
-                        <h3 class="lg:text-lg xl:text-2xl font-bold mb-5">
-                            {{ .title }}
-                        </h3>
-                        <div class="lg:text-lg xl:text-xl">
-                            {{ .description | markdownify }}
+            <div class="swiper-slide h-full">
+                <div class="m-4 ">
+                    <div class="relative">
+                        <p
+                            class="tk-moby-monospaced bg-pink text-white uppercase text-xs p-1 absolute -right-2 pr-2 top-4 z-20">
+                            SOSTENIBILIDAD</p>
+                        <picture>
+                            <source srcset="/images/home/foto-slider@2x.png" media="(min-width: 1280px)">
+                            <img class="w-full" srcset="/images/home/foto-slider.png" alt="Imagen sostenibilidad">
+                        </picture>
+                    </div>
+                    <div class="px-7 pt-7 pb-12  bg-white relative">
+                        <div class="space-y-2">
+                            <h3 class="lg:text-lg xl:text-2xl font-bold">
+                                {{ .title }}
+                            </h3>
+                            <p class=" truncate-four">
+                                {{ .description | markdownify }}
+                            </p>
                         </div>
                         {{ if .url }}
-                            <a class="tk-moby font-bold italic text-sm py-3 px-10 bg-black text-lemon absolute -bottom-7" target="_blank" href="{{ .url }}">Ver más</a>
+                        <a class="tk-moby font-bold italic text-sm py-3 px-10 bg-black text-lemon absolute -bottom-4"
+                            target="_blank" href="{{ .url }}">Ver más</a>
                         {{ end }}
+                        <img class="absolute bottom-4 right-3 h-8" src="/images/home/stair.png" alt="icono estrella">
                     </div>
-                    <p
-                        class="tk-moby-monospaced bg-pink text-white uppercase text-xs p-1 absolute -right-4 top-4">
-                        SOSTENIBILIDAD</p>
-                    <img class="absolute bottom-4 right-3 h-8" src="/images/home/stair.png"
-                        alt="icono estrella">
                 </div>
+
             </div>
             {{ end }}
         </div>
