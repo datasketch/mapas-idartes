@@ -7,4 +7,5 @@ images:
     - /images/memorias/arte-ky/ky-1.jpg
     - /images/memorias/arte-ky/ky-2.jpg
     - /images/memorias/arte-ky/ky-3.jpg
+type: gestion-del-conocimiento/memorias
 ---

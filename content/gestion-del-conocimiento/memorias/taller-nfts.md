@@ -8,4 +8,6 @@ images:
     - /images/memorias/nfts/nft-2.jpg
     - /images/memorias/nfts/nft-3.jpg
     - /images/memorias/nfts/nft-4.jpg
+
+type: gestion-del-conocimiento/memorias
 ---

@@ -10,4 +10,7 @@ images:
     - /images/memorias/wikitones/wikiton-4.jpg
     - /images/memorias/wikitones/wikiton-5.jpg
     - /images/memorias/wikitones/wikiton-6.jpg
+
+type: gestion-del-conocimiento/memorias
+
 ---

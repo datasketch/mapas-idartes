@@ -9,4 +9,5 @@ images:
     - /images/memorias/corredor-artistico/ca-3.jpg
     - /images/memorias/corredor-artistico/ca-4.jpg
     - /images/memorias/corredor-artistico/ca-5.jpg
+type: gestion-del-conocimiento/memorias
 ---

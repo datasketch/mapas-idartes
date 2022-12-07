@@ -8,4 +8,5 @@ images:
     - /images/memorias/quirigua/quirigua-2.jpg
     - /images/memorias/quirigua/quirigua-3.jpg
     - /images/memorias/quirigua/quirigua-4.jpg
+type: gestion-del-conocimiento/memorias
 ---
