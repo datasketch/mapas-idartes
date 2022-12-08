@@ -7,14 +7,17 @@
 {{ partial "og-meta-tags.html" . }}
 
 {{ $css := resources.Get "css/tailwind.pcss" | toCSS | postCSS | minify }}
-{{ $menu := resources.Get "css/menu.css" | toCSS | postCSS | minify }}
 
 <link rel="stylesheet" href="https://use.typekit.net/ozz5lqb.css">
-<link rel="stylesheet" href="{{ $menu.Permalink }}">
 <link rel="stylesheet" href="{{ $css.Permalink }}">
+<link rel="stylesheet" href="https://unpkg.com/swiper@6.7.0/swiper-bundle.min.css" />
 
 {{ if .Title }}
 <title>{{ .Title }} | {{ .Site.Title }}</title>
 {{ else }}
     <title>{{ .Site.Title }}</title>
 {{ end }}
+
+{{/*  {{ define "head" }}
+
+{{ end }}  */}}
