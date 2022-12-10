@@ -4,10 +4,10 @@ description: "Recolección de información cualitativa en el marco de la ejecuci
 date_label: Sábado 23 de octubre
 image: /images/memorias/corredores_artisticos.jpg
 images:
-    - /images/memorias/corredor-artistico/ca-1.jpeg
     - /images/memorias/corredor-artistico/ca-2.jpg
     - /images/memorias/corredor-artistico/ca-3.jpg
     - /images/memorias/corredor-artistico/ca-4.jpg
     - /images/memorias/corredor-artistico/ca-5.jpg
+    - /images/memorias/corredor-artistico/ca-1.jpeg
 type: gestion-del-conocimiento/memorias
 ---

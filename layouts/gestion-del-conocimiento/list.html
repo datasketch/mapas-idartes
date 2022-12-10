@@ -12,10 +12,11 @@
         <div class="w-2/3 space-y-4 py-16 lg:py-36">
             <h2 class="font-bold text-2xl md:text-3xl lg:text-4xl xl:text-5xl tk-moby-monospaced">¿Que es?</h2>
             <p class="text-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium atque dignissimos, placeat, quae
-                nemo dolore pariatur cum, eius explicabo quaerat itaque. Placeat sunt optio, non ad modi voluptatum aut
-                nisi!
-            </p>
+                Es uno de los componentes del ecosistema artístico y cultural para identificar, diagnosticar y
+                caracterizar prácticas
+                sostenibles, redes colaborativas, mapeo de agentes, circuitos locales y entornos comunitarios. (Tomado
+                de la página web
+                de la línea de sostenibilidad).
         </div>
     </div>
     <img class="absolute hidden lg:block -bottom-10 left-5/12 z-10" src="/images/memorias/stair-rounded.svg"
@@ -25,62 +26,43 @@
 
 
 {{/* Laboratorios */}}
-<section
-    class="py-16 lg:py-20  max-w-screen-lg mx-auto w-10/12 lg:w-full grid md:grid-cols-2 gap-x-16 gap-y-20">
+<section class="py-16 lg:py-20  max-w-screen-lg mx-auto w-10/12 lg:w-full grid md:grid-cols-2 gap-x-16 gap-y-20">
     <div class="w-full space-y-4">
         <h2 class="text-5xl font-bold" style="font-family: Nazare;"><span class="bg-gainsboro">laboratorios </span>
             mapas
             <img class="inline-flex" src="/images/memorias/blue-sticky.svg" alt="">
         </h2>
-        <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deleniti facere
-            distinctio? Fugit a itaque tenetur quos ratione cum explicabo aliquam veritatis! Quisquam est hic ut
-            fugit, suscipit adipisci magni!</p>
+        <p class="text-lg">
+            Son espacios de apropiación, interacción e intercambio para la gestión del conocimiento en el arte y la
+            cultura. Los
+            ejes centrales son redes colaborativas, sistemas de información y herramientas de exploración e innovación
+            artística.
+            Cada laboratorio consistió en dos sesiones, una teórica y otra práctica. En la sesión teórica se adentraba
+            en los
+            conceptos básicos de los ejes temáticos y en la sesión práctica se hacían ejercicios compilando lo visto
+            anteriormente.
+
+        </p>
     </div>
+    {{range where .RegularPages "Type" "==" "gestion-del-conocimiento/laboratorios" }}
+
 
     <div>
-        <div class="bg-center bg-contain h-40 relative" style="background-image: url(/images/memorias.jpg);">
-            <div class="bg-blue w-1/3 text-white p-1 z-10 absolute -top-3" style="font-family: Nazare;">laboratorio 1
+        <div class="bg-center bg-contain h-52 relative" style="background-image: url(/images/memorias.jpg);">
+            <div class="bg-blue w-1/3 text-white p-1 z-10 absolute -top-3" style="font-family: Nazare;">{{ .Params.tag }}
             </div>
         </div>
-        <div class="bg-gainsboro h-2/3 flex flex-col justify-between">
-            <div class="py-6 px-4 space-y-3">
-                <p class="tk-ibm-plex-mono">Sep 18 Y 30 / 2022</p>
-                <p class="text-xl" style="font-family: Nazare;">La gestión del conocimiento en el arte y la cultura</p>
-                <p class="tk-ibm-plex-mono">Facilitador/a: Cami Bohórquez</p>
+        <div class="bg-gainsboro flex flex-col gap-y-6">
+            <div class="pt-12 px-6 space-y-5">
+                <p class="tk-ibm-plex-mono">{{ .Params.days }}</p>
+                <p class="text-xl" style="font-family: Nazare;">{{.Title}}</p>
+                <p class="tk-ibm-plex-mono text-lg">Facilitador/a: {{ .Params.facilitator }}</p>
             </div>
-            <a class="tk-moby font-bold text-lemon px-4 py-1.5 w-1/3 bg-black" href="#">Ver más</a>
+            <a class="tk-moby font-bold text-lemon px-4 py-1.5 w-1/3 bg-black" href="{{.Permalink}}">Ver más</a>
         </div>
     </div>
+    {{end}}
 
-    <div>
-        <div class="bg-center bg-contain h-40 relative" style="background-image: url(/images/memorias.jpg);">
-            <div class="bg-blue w-1/3 text-white p-1 z-10 absolute -top-3" style="font-family: Nazare;">laboratorio 1
-            </div>
-        </div>
-        <div class="bg-gainsboro h-2/3 flex flex-col justify-between">
-            <div class="py-6 px-4 space-y-3">
-                <p class="tk-ibm-plex-mono">Sep 18 Y 30 / 2022</p>
-                <p class="text-xl" style="font-family: Nazare;">La gestión del conocimiento en el arte y la cultura</p>
-                <p class="tk-ibm-plex-mono">Facilitador/a: Cami Bohórquez</p>
-            </div>
-            <a class="tk-moby font-bold text-lemon px-4 py-1.5 w-1/3 bg-black" href="#">Ver más</a>
-        </div>
-    </div>
-
-    <div>
-        <div class="bg-center bg-contain h-40 relative" style="background-image: url(/images/memorias.jpg);">
-            <div class="bg-blue w-1/3 text-white p-1 z-10 absolute -top-3" style="font-family: Nazare;">laboratorio 1
-            </div>
-        </div>
-        <div class="bg-gainsboro h-2/3 flex flex-col justify-between">
-            <div class="py-6 px-4 space-y-3">
-                <p class="tk-ibm-plex-mono">Sep 18 Y 30 / 2022</p>
-                <p class="text-xl" style="font-family: Nazare;">La gestión del conocimiento en el arte y la cultura</p>
-                <p class="tk-ibm-plex-mono">Facilitador/a: Cami Bohórquez</p>
-            </div>
-            <a class="tk-moby font-bold text-lemon px-4 py-1.5 w-1/3 bg-black" href="#">Ver más</a>
-        </div>
-    </div>
 
 </section>
 {{/* Laboratorios */}}
@@ -211,7 +193,7 @@
     <div
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-20 mx-auto w-10/12 mb-16 lg:mb-32 xl:mb-40">
         {{range where .RegularPages "Type" "==" "gestion-del-conocimiento/memorias" }}
-        
+
         <div class="relative">
             <div class="aspect-w-16 aspect-h-9">
                 <img class="object-cover object-center w-full h-full" src="{{ .Params.image }}" alt="{{ .Title }}">

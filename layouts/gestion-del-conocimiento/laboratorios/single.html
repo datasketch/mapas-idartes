@@ -3,7 +3,6 @@
 <section class="flex flex-col md:flex-row relative">
 
     <div class="w-11/12 h-auto lg:w-1/2 bg-cover bg-center" style="background-image: url({{.Params.image}});">
-
     </div>
     <div class="w-11/12 lg:w-1/2 mx-auto">
         <div class="lg:w-1/2 mx-auto py-16 space-y-6">
@@ -12,28 +11,28 @@
             </h2>
             <div class="space-y-1.5">
                 <div>
-                    <span class="font-bold tk-ibm-plex-mono">Facilitador/a: <span><span
-                                class="font-normal">{{.Params.facilitator}}</span>
+                    <span class="font-bold tk-ibm-plex-mono">Facilitador/a: <span><span class="font-normal">{{
+                                .Params.facilitator }}</span>
                 </div>
                 <div>
-                    <span class="font-bold tk-ibm-plex-mono">Número de sesiones: <span><span
-                                class="font-normal">{{.Params.sessions}}</span>
+                    <span class="font-bold tk-ibm-plex-mono">Número de sesiones: <span><span class="font-normal">{{
+                                .Params.session }}</span>
                 </div>
                 <div>
-                    <span class="font-bold tk-ibm-plex-mono">Duración: <span><span
-                                class="font-normal">{{.Params.duration}}</span>
+                    <span class="font-bold tk-ibm-plex-mono">Duración: <span><span class="font-normal">{{
+                                .Params.duration }}</span>
                 </div>
                 <div>
-                    <span class="font-bold tk-ibm-plex-mono">Fecha inicio: <span><span
-                                class="font-normal">{{.Params.start}}</span>
+                    <span class="font-bold tk-ibm-plex-mono">Fecha inicio: <span><span class="font-normal">{{
+                                .Params.start }}</span>
                 </div>
                 <div>
-                    <span class="font-bold tk-ibm-plex-mono">Fecha final: <span><span
-                                class="font-normal">{{.Params.end}}</span>
+                    <span class="font-bold tk-ibm-plex-mono">Fecha final: <span><span class="font-normal">{{ .Params.end
+                                }}</span>
                 </div>
                 <div>
-                    <span class="font-bold tk-ibm-plex-mono">Hora: <span><span
-                                class="font-normal">{{.Params.Hour}}</span>
+                    <span class="font-bold tk-ibm-plex-mono">Hora: <span><span class="font-normal">{{ .Params.Hour
+                                }}</span>
                 </div>
 
             </div>
@@ -51,7 +50,7 @@
     </div>
     <div class="md:w-2/3 tk-ibm-plex-mono">
         <p class="text-lg">
-            {{ .Content }}
+            {{ .Params.description }}
         </p>
     </div>
 </section>
@@ -83,12 +82,23 @@
         <h2 class="text-3xl" style="font-family: Nazare;">Galería de fotos</h2>
         <img class="transform -translate-x-5" src="/images/laboratorios/border-pink.svg" alt="">
     </div>
-    <div class="mt-8 flex flex-wrap gap-4 justify-center">
-        {{ range .Params.gallery }}
-        <div class="w-full sm:w-72 p-4">
-            <img class="w-full h-full object-cover object-center" src="{{ . | absURL }}" alt="">
+    {{/* flex flex-wrap gap-4 justify-center */}}
+    <div class="mt-8  space-y-6">
+        <div class="mx-auto">
+            <div style="--swiper-navigation-color: #000; --swiper-pagination-color: #000"
+                class="swiper swiper-galeria overflow-hidden relative mb-4">
+                <div class="swiper-wrapper">
+                    {{ range .Params.gallery }}
+                    <div class="swiper-slide">
+                        <img class="w-10/12 mx-auto max-w-5xl" style="height: 500px;" src="{{ . | absURL }}" alt="">
+                    </div>
+                    {{ end }}
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
         </div>
-        {{ end }}
     </div>
 </section>
 {{/* galeria */}}
@@ -101,84 +111,33 @@
             <img class="transform -translate-x-5" src="/images/laboratorios/border-pink.svg" alt="">
         </div>
         <div class="space-y-6">
+            {{ if .Params.tools }}
             <div class="space-y-4">
                 <h2 class="text-xl" style="font-family: Nazare;">Enlaces de interés</h2>
                 <div class="">
                     <div class="swiper swiper-enlaces h-44 overflow-hidden relative">
                         <div class="swiper-wrapper">
-
-                      
+                            {{ range .Params.tools}}
                             <div class="swiper-slide">
-                                <div class="flex justify-center items-center border-2 border-black bg-white p-3 max-w-xs max-h-36 relative">
-                                    <div class=" p-1.5  space-y-4">
-                                        <div class="p-3 tk-ibm-plex truncate-four text-sm">
-                                            <span class="text-blue">LOREM IPSUM,</span> Lorem ipsum dolor sit amet,
-                                            consectetuer
-                                            adipiscing elit, sed Diam.
+                                <div
+                                    class="flex justify-center items-center border-2 border-black bg-white p-3 max-w-xs max-h-36 relative h-full">
+                                    <div class=" p-1.5 space-y-4">
+                                        <div class="p-3 tk-ibm-plex text-sm">
+                                            {{ if (eq .category "") }}
+                                            <span>{{ .title }}</span>
+                                            {{else}}
+                                            <p class="truncate-four"><span class="text-blue">{{ .title }}</span>,{{
+                                                .category }}</p>
+                                            {{end}}
                                         </div>
                                         <div class="absolute flex justify-center" style="bottom: -15%; left: 30%;">
-                                            <a href="#" class="py-1.5 px-4 bg-black text-lemon tk-moby">ver mas</a>
+                                            <a href="{{ .link }}" target="_blank"
+                                                class="py-1.5 px-4 bg-black text-lemon tk-moby">ver mas</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="flex justify-center items-center border-2 border-black bg-white p-3 max-w-xs max-h-36 relative">
-                                    <div class=" p-1.5  space-y-4">
-                                        <div class="p-3 tk-ibm-plex truncate-four text-sm">
-                                            <span class="text-blue">LOREM IPSUM,</span> Lorem ipsum dolor sit amet,
-                                            consectetuer
-                                            adipiscing elit, sed Diam.
-                                        </div>
-                                        <div class="absolute flex justify-center" style="bottom: -15%; left: 30%;">
-                                            <a href="#" class="py-1.5 px-4 bg-black text-lemon tk-moby">ver mas</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="flex justify-center items-center border-2 border-black bg-white p-3 max-w-xs max-h-36 relative">
-                                    <div class=" p-1.5  space-y-4">
-                                        <div class="p-3 tk-ibm-plex truncate-four text-sm">
-                                            <span class="text-blue">LOREM IPSUM,</span> Lorem ipsum dolor sit amet,
-                                            consectetuer
-                                            adipiscing elit, sed Diam.
-                                        </div>
-                                        <div class="absolute flex justify-center" style="bottom: -15%; left: 30%;">
-                                            <a href="#" class="py-1.5 px-4 bg-black text-lemon tk-moby">ver mas</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="flex justify-center items-center border-2 border-black bg-white p-3 max-w-xs max-h-36 relative">
-                                    <div class=" p-1.5  space-y-4">
-                                        <div class="p-3 tk-ibm-plex truncate-four text-sm">
-                                            <span class="text-blue">LOREM IPSUM,</span> Lorem ipsum dolor sit amet,
-                                            consectetuer
-                                            adipiscing elit, sed Diam.
-                                        </div>
-                                        <div class="absolute flex justify-center" style="bottom: -15%; left: 30%;">
-                                            <a href="#" class="py-1.5 px-4 bg-black text-lemon tk-moby">ver mas</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="flex justify-center items-center border-2 border-black bg-white p-3 max-w-xs max-h-36 relative">
-                                    <div class=" p-1.5  space-y-4">
-                                        <div class="p-3 tk-ibm-plex truncate-four text-sm">
-                                            <span class="text-blue">LOREM IPSUM,</span> Lorem ipsum dolor sit amet,
-                                            consectetuer
-                                            adipiscing elit, sed Diam.
-                                        </div>
-                                        <div class="absolute flex justify-center" style="bottom: -15%; left: 30%;">
-                                            <a href="#" class="py-1.5 px-4 bg-black text-lemon tk-moby">ver mas</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
+                            {{end}}
 
                         </div>
 
@@ -191,74 +150,32 @@
                     </div>
                 </div>
             </div>
+            {{ end }}
+            {{ if .Params.documents}}
             <div class="space-y-4">
                 <h2 class="text-xl" style="font-family: Nazare;">Documentos de interés</h2>
                 <div class="">
                     <div class="swiper swiper-documentos h-44 overflow-hidden relative">
                         <div class="swiper-wrapper">
+                            {{ range .Params.documents}}
                             <div
                                 class="swiper-slide flex gap-x-4 items-center border-2 border-black bg-white p-3 max-w-sm max-h-36 relative">
                                 <div class="">
                                     <img class="max-h-28" src="/images/laboratorios/icon-pdf.png" />
                                 </div>
                                 <div class="w-4/5 p-1.5 ">
-                                    <div class="tk-ibm-plex text-sm truncate-four">
-                                        <span class="text-blue">LOREM IPSUM1,</span> Lorem ipsum dolor sit amet,
-                                        consectetuer adipiscing elit, sed Diam.
+                                    <div class="tk-ibm-plex text-sm ">
+                                        <div class="p-3 tk-ibm-plex text-sm">
+                                            <p class="truncate-four break-words">{{ .title }}</p>                                            
+                                        </div>
                                     </div>
                                     <div class="absolute flex justify-center" style="bottom: -15%;left: 35%;">
-                                        <a href="#" class="py-1.5 px-2.5 bg-black text-lemon tk-moby">Descargar</a>
+                                        <a href="{{ .link }}" class="py-1.5 px-2.5 bg-black text-lemon tk-moby" download="">Descargar</a>
                                     </div>
                                 </div>
                             </div>
-                            <div
-                                class="swiper-slide flex gap-x-4 items-center border-2 border-black bg-white p-3 max-w-sm max-h-36 relative">
-                                <div class="">
-                                    <img class="max-h-28" src="/images/laboratorios/icon-pdf.png" />
-                                </div>
-                                <div class="w-4/5 p-1.5 ">
-                                    <div class="tk-ibm-plex text-sm truncate-four">
-                                        <span class="text-blue">LOREM IPSUM1,</span> Lorem ipsum dolor sit amet,
-                                        consectetuer adipiscing elit, sed Diam.
-                                    </div>
-                                    <div class="absolute flex justify-center" style="bottom: -15%;left: 35%;">
-                                        <a href="#" class="py-1 px-2.5 bg-black text-lemon tk-moby">Descargar</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="swiper-slide flex gap-x-4 items-center border-2 border-black bg-white p-3 max-w-sm max-h-36 relative">
-                                <div class="">
-                                    <img class="max-h-28" src="/images/laboratorios/icon-pdf.png" />
-                                </div>
-                                <div class="w-4/5 p-1.5 ">
-                                    <div class="tk-ibm-plex text-sm truncate-four">
-                                        <span class="text-blue">LOREM IPSUM1,</span> Lorem ipsum dolor sit amet,
-                                        consectetuer adipiscing elit, sed Diam.
-                                    </div>
-                                    <div class="absolute flex justify-center" style="bottom: -15%;left: 35%;">
-                                        <a href="#" class="py-1 px-2.5 bg-black text-lemon tk-moby">Descargar</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="swiper-slide flex gap-x-4 items-center border-2 border-black bg-white p-3 max-w-sm max-h-36 relative">
-                                <div class="">
-                                    <img class="max-h-28" src="/images/laboratorios/icon-pdf.png" />
-                                </div>
-                                <div class="w-4/5 p-1.5 ">
-                                    <div class="tk-ibm-plex text-sm truncate-four">
-                                        <span class="text-blue">LOREM IPSUM1,</span> Lorem ipsum dolor sit amet,
-                                        consectetuer adipiscing elit, sed Diam.
-                                    </div>
-                                    <div class="absolute flex justify-center" style="bottom: -15%;left: 35%;">
-                                        <a href="#" class="py-1 px-2.5 bg-black text-lemon tk-moby">Descargar</a>
-                                    </div>
-                                </div>
-                            </div>
-
+                            {{ end }}
                         </div>
-
                         <div
                             class="absolute bg-opacity-60 top-0 w-20 z-10 -right-0 bg-gainsboro h-full md:flex items-center hidden">
                             <div class="swiper-custom-next2 cursor-pointer"></div>
@@ -269,6 +186,7 @@
                 </div>
 
             </div>
+            {{ end }}
         </div>
     </div>
 </section>
