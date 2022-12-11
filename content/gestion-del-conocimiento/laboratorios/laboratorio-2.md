@@ -1,5 +1,6 @@
 ---
 tag: laboratorio 2
+position: 2
 title: Redes Colaborativas y ecosistema artístico y cultura
 facilitator: Juliana Bohórquez 
 sessions: 2

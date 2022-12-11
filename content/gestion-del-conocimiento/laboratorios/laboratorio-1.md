@@ -1,5 +1,6 @@
 ---
 tag: laboratorio 1
+position: 1
 title: La gestión del conocimiento en el arte y la cultura
 facilitator: Cami Bohórquez
 sessions: 2

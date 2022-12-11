@@ -1,5 +1,6 @@
 ---
 tag: laboratorio 3
+position: 3
 title: Sistemas de información y apropiación del conocimiento 
 facilitator: Ana Milena Prada
 sessions: 2

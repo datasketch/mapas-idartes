@@ -2,7 +2,6 @@
 <!-- Nuevo banner gestion del conocimiento -->
 <section class="flex flex-col lg:flex-row relative">
     <p class="tk-moby-monospaced bg-pink text-white uppercase text-xs p-1 absolute z-10 lg:top-4 lg:left-2/5">
-        <!-- bottom-0 lg:bottom-auto lg:-right-36 lg:top-4 lg:block -->
         linea de Sostenibilidad
     </p>
     <div class="h-52 lg:w-1/2 bg-cover bg-center lg:h-auto" style="background-image: url(/images/memorias.jpg); ">
@@ -44,12 +43,13 @@
 
         </p>
     </div>
-    {{range where .RegularPages "Type" "==" "gestion-del-conocimiento/laboratorios" }}
-
-
+    
+    {{range ( sort ( where .RegularPages "Type" "==" "gestion-del-conocimiento/laboratorios" ) ".Params.position" "asc" )}}
     <div>
-        <div class="bg-center bg-contain h-52 relative" style="background-image: url(/images/memorias.jpg);">
-            <div class="bg-blue w-1/3 text-white p-1 z-10 absolute -top-3" style="font-family: Nazare;">{{ .Params.tag }}
+        <div class="bg-center bg-no-repeat bg-cover h-52 relative"
+            style="background-image: url('{{ .Params.image }}');">
+            <div class="bg-blue w-1/3 text-white p-1 z-10 absolute -top-3" style="font-family: Nazare;">{{ .Params.tag
+                }}
             </div>
         </div>
         <div class="bg-gainsboro flex flex-col gap-y-6">
@@ -62,7 +62,6 @@
         </div>
     </div>
     {{end}}
-
 
 </section>
 {{/* Laboratorios */}}

@@ -1,5 +1,6 @@
 ---
 tag: laboratorio 4
+position: 4
 title: Arte, ciencia y tecnología en la gestión del conocimiento
 facilitator: Alfonso Pretelt 
 sessions: 2
