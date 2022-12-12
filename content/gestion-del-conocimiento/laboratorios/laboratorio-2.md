@@ -21,7 +21,11 @@ gallery:
         - /images/memorias/arte-ky/ky-2.jpg
         - /images/memorias/arte-ky/ky-3.jpg
         - /images/memorias/arte-ky/ky-1.jpg
-        
+videos: 
+      - https://player.vimeo.com/video/780199633
+      - https://player.vimeo.com/video/780360232
+      - https://player.vimeo.com/video/780200197
+      - https://player.vimeo.com/video/780353571      
 
 tools:  
         - title: "Comportamiento colectivo de los animales:"

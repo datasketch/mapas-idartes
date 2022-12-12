@@ -20,6 +20,12 @@ gallery:
         - /images/memorias/arte-ky/ky-2.jpg
         - /images/memorias/arte-ky/ky-3.jpg       
 
+videos: 
+      - https://player.vimeo.com/video/780199551
+      - https://player.vimeo.com/video/780200133
+      - https://player.vimeo.com/video/780354702
+      - https://player.vimeo.com/video/780359816
+  
 tools: 
         - title: "La gestión del conocimiento y su importancia para las organizaciones y los colectivos artísticos:"
           category: ""

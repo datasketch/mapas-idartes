@@ -21,13 +21,39 @@ gallery:
         - /images/memorias/arte-ky/ky-2.jpg
         - /images/memorias/arte-ky/ky-3.jpg
         - /images/memorias/arte-ky/ky-1.jpg
-        
 
-tools:   
+videos:
+        - https://player.vimeo.com/video/780199882
+        - https://player.vimeo.com/video/780200556
+        - https://player.vimeo.com/video/780351684
+        - https://player.vimeo.com/video/780365109
 
-documents: 
-        - title: "Presentación arte ciencia & tecnología para la gestión del conocimiento"
-          link:  "Presentación arte ciencia & tecnología para la gestión del conocimiento.pdf"
+tools: 
+        - title: Pauline Oliveros
+          link: https://es.wikipedia.org/wiki/Pauline_Oliveros
+        - title: Deep listening
+          link: https://paulineoliveros.us/
+        - title: Pauline Oliveros - Retrospectiva 
+          link: https://www.youtube.com/watch?v=pW6WXOwFphk&ab_channel=C3ACentrodeCreaci%C3%B3nContempor%C3%A1neadeAndaluc%C3%ADa
+        - title: La diferencia entre oir y escuchar 
+          link: https://www.youtube.com/watch?v=_QHfOuRrJB8&t=303s&ab_channel=TEDxTalks
+        - title: Murray Schafer
+          link: https://es.wikipedia.org/wiki/R._Murray_Schafer
+        - title: Murray Schafer - Semblanzas
+          link: https://fonotecanacional.gob.mx/index.php/escucha/secciones-especiales/semblanzas/murray-schafer
+        - title: Archivo sonoro
+          link: https://www.archivosonoro.org/archivos/murray-schafer/
+        - title: Los exploradores sonoros
+          link: https://www.youtube.com/watch?v=xfI4WtI0Ric&ab_channel=ArsSonorus
+        - title: Escucha - Murray Schafer
+          link: https://www.youtube.com/watch?v=5q1rpNNnCUc&ab_channel=DanielBianchi
+        - title: Masami Akita (Merzbow)
+          link: https://es.wikipedia.org/wiki/Merzbow
+        - title: Jhon Cage
+          link: https://es.wikipedia.org/wiki/John_Cage
+        - title: Deposito sonoro - Jhon Cage 
+          link: https://depositosonoro.com/2018/07/11/john-cage-aseguraba-que-no-existe-el-silencio-en-este-mundo/
+        - title: Nun June Paid
+          link: https://es.wikipedia.org/wiki/Nam_June_Paik
 
-metodology: 
 ---

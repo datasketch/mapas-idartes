@@ -61,8 +61,26 @@
         <h2 class="text-3xl" style="font-family: Nazare;">Video documental</h2>
         <img class="transform -translate-x-5" src="/images/laboratorios/border-pink.svg" alt="">
     </div>
-    <div class="flex  gap-20 mt-8">
-        
+    <div class="flex gap-20 mt-8">
+        <div class="mx-auto">
+            <div style="--swiper-navigation-color: #000; --swiper-pagination-color: #000"
+                class="swiper swiper-video overflow-hidden relative mb-4">
+                <div class="swiper-wrapper">
+                    {{ range .Params.videos }}
+                    <div class="swiper-slide ">
+                        <iframe src="{{.}}?h=c99206d621&byline=0&portrait=0"
+                            style=" width:800px; height:640px;" frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+                {{ end }}
+            </div>
+            <div class="swiper-video-next"></div>
+            <div class="swiper-video-prev"></div>
+        </div>
+
+    </div>
 
 
     </div>
@@ -82,22 +100,14 @@
             <div style="--swiper-navigation-color: #000; --swiper-pagination-color: #000"
                 class="swiper swiper-galeria overflow-hidden relative mb-4">
                 <div class="swiper-wrapper">
-                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/780199551?h=4c11f25b51"
-                            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
-                            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
-                    <script src="https://player.vimeo.com/api/player.js"></script>
-                    <p><a href="https://vimeo.com/780199551">Lab 1. La gesti&oacute;n del conocimiento en el arte y la cultura</a> from <a
-                            href="https://vimeo.com/user185254445">Jp marin diaz</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-                    <p>En la sesi&oacute;n te&oacute;rica se presentaron conceptos de la gesti&oacute;n del conocimiento como el
-                        conocimiento t&aacute;cito y expl&iacute;cito, fundamentados en el modelo de la espiral del conocimiento, y el valor
-                        de los activos f&iacute;sicos y no f&iacute;sicos de una organizaci&oacute;n.<br />
-                        <br />
-                        En la parte pr&aacute;ctica, los participantes construyeron un plan de gesti&oacute;n del conocimiento para sus
-                        organizaciones.
-                    </p>
+                    {{ range .Params.gallery }}
+                    <div class="swiper-slide">
+                        <img class="w-10/12 mx-auto max-w-5xl" style="height: 500px;" src="{{ . | absURL }}" alt="">
+                    </div>
+                    {{ end }}
                 </div>
-                <div class="swiper-video-next"></div>
-                <div class="swiper-video-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
 
         </div>
@@ -168,11 +178,12 @@
                                 <div class="w-4/5 p-1.5 ">
                                     <div class="tk-ibm-plex text-sm ">
                                         <div class="p-3 tk-ibm-plex text-sm">
-                                            <p class="truncate-four break-words">{{ .title }}</p>                                            
+                                            <p class="truncate-four break-words">{{ .title }}</p>
                                         </div>
                                     </div>
                                     <div class="absolute flex justify-center" style="bottom: -15%;left: 35%;">
-                                        <a href="{{ .link }}" class="py-1.5 px-2.5 bg-black text-lemon tk-moby" download="">Descargar</a>
+                                        <a href="{{ .link }}" class="py-1.5 px-2.5 bg-black text-lemon tk-moby"
+                                            download="">Descargar</a>
                                     </div>
                                 </div>
                             </div>
@@ -206,6 +217,31 @@
         </div>
         <div class="absolute top-0 left-0"><img src="/images/laboratorios/left-decoration.svg" alt=""></div>
         <div class="absolute top-0  right-0"><img src="/images/laboratorios/right-decoration.svg" alt=""></div>
+        <div class="space-y-3 w-11/12 lg:w-10/12 mx-auto mt-6 lg:text-lg">
+            <p>
+                Los laboratorios son un formato de creación, experimentación e investigación de procesos y temáticas
+                que contempla la
+                interacción entre herramientas tecnológicas, disciplinas diversas, experiencias y conocimientos.
+                Permite una relación
+                con los participantes y el tallerista que parte desde la horizontalidad, ya que entre todos están
+                construyendo unas
+                formas de ejecutar, accionar y experimentar dichos aprendizajes.
+            </p>
+            <p>
+                Las sesiones de los laboratorios han contado con dos componentes, uno teórico y otro práctico. En la
+                primera sesión se
+                desarrollan los conceptos clave y en la segunda se explicitan de manera práctica en un qué hacer que
+                vincula a los
+                participantes de manera contextualizada a su quehacer artístico.
+            </p>
+            <p>
+                A lo largo del desarrollo de estos laboratorios y de su propuesta inicial, se ha buscado ahondar y
+                precisar por un lado,
+                en los diversos conocimientos tanto tácitos como explícitos, la complejidad de las redes
+                colaborativas, la
+                sostenibilidad y la educación artística.
+            </p>
+        </div>
     </div>
 
 </section>
@@ -216,4 +252,5 @@
 {{ define "js" }}
 {{ $swipers := resources.Get "js/swipers.js" | js.Build (dict "minify" true) }}
 <script src="{{ $swipers.Permalink }}"></script>
+<script src="https://player.vimeo.com/api/player.js"></script>
 {{ end }}

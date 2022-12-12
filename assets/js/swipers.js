@@ -5,6 +5,8 @@ const nextButton = document.querySelector('.swiper-custom-next');
 const nextButton2 = document.querySelector('.swiper-custom-next2');
 const next = document.querySelector('.swiper-button-next');
 const prev = document.querySelector('.swiper-button-prev');
+const nextVideo = document.querySelector('.swiper-video-next');
+const prevVideo = document.querySelector('.swiper-video-prev');
 
 const conf = {
   slidesPerView: 1,
@@ -64,15 +66,26 @@ const conf2 = {
 const swiperEnlace = new Swiper('.swiper-enlaces', conf);
 const swiperDocumento = new Swiper('.swiper-documentos', conf2);
 
+const swiperVideos = new Swiper('.swiper-video',
+    {
 
+      navigation: {
+        nextEl: nextVideo,
+        prevEl: prevVideo,
+      },
+
+    });
+
+console.log('luis');
 const swiperGaleria = new Swiper('.swiper-galeria', {
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-    disabledClass: 'opacity-40',
+
   },
 });
+
 const swiperMemorias = new Swiper('.swiper-memorias', {
   loop: true,
   navigation: {
@@ -93,11 +106,20 @@ next.addEventListener('click', () => {
 prev.addEventListener('click', () => {
   swiperGaleria.slidePrev();
 });
+
 next.addEventListener('click', () => {
   swiperMemorias.slideNext();
 });
 
 prev.addEventListener('click', () => {
   swiperMemorias.slidePrev();
+});
+
+nextVideo.addEventListener('click', () => {
+  swiperVideos.slideNext();
+});
+
+prevVideo.addEventListener('click', () => {
+  swiperVideos.slidePrev();
 });
 

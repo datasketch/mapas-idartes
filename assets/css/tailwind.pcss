@@ -51,7 +51,7 @@
    
 
    .slider-next,
-   .slider-prev {
+   .slider-prev,.slider-video-next,.slider-video-prev {
     @apply absolute top-1/2 transform -translate-y-1/2 w-10 h-10 bg-center bg-contain bg-no-repeat cursor-pointer;
    }
    
@@ -63,6 +63,20 @@
    }
    
    .slider-prev {
+    @apply -left-16 xl:-left-32 hidden lg:block;
+    background-image: url("/images/left-arrow.png");
+    width: 65px;
+    height: 65px;
+   }
+
+   .slider-video-next {
+    @apply -right-16 xl:-right-32 hidden lg:block;
+    width: 65px;
+    height: 65px;
+    background-image: url("/images/right-arrow.png");
+   }
+   
+   .slider-video-prev {
     @apply -left-16 xl:-left-32 hidden lg:block;
     background-image: url("/images/left-arrow.png");
     width: 65px;

@@ -21,7 +21,12 @@ gallery:
         - /images/memorias/arte-ky/ky-2.jpg
         - /images/memorias/arte-ky/ky-3.jpg
         - /images/memorias/arte-ky/ky-1.jpg
-        
+
+videos: 
+       - https://player.vimeo.com/video/780199742
+       - https://player.vimeo.com/video/780200358
+       - https://player.vimeo.com/video/780352982
+       - https://player.vimeo.com/video/780360957
 
 tools:  
         - title: "ARE.NA"
