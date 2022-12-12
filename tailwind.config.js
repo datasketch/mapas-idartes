@@ -31,6 +31,7 @@ module.exports = {
         'lemon-dark': '#B2B511',
         'cultured': '#ECECEC',
         'gainsboro': '#D8D8D8',
+        'blue-ncs': '#2589BD',
       },
       inset: {
         '2/5': '40%',
