@@ -4,7 +4,8 @@
     <p class="tk-moby-monospaced bg-pink text-white uppercase text-xs p-1 absolute z-10 lg:top-4 lg:left-2/5">
         linea de Sostenibilidad
     </p>
-    <div class="h-52 lg:w-1/2 bg-cover bg-center lg:h-auto" style="background-image: url(/images/memorias.jpg); ">
+    <div class="h-52 lg:w-1/2 bg-cover bg-center lg:h-auto"
+        style="background-image: url(/images/gestion-del-conocimiento.png); " >
     </div>
 
     <div class="lg:w-1/2 bg-gainsboro  flex items-center justify-center ">
@@ -43,8 +44,9 @@
 
         </p>
     </div>
-    
-    {{range ( sort ( where .RegularPages "Type" "==" "gestion-del-conocimiento/laboratorios" ) ".Params.position" "asc" )}}
+
+    {{range ( sort ( where .RegularPages "Type" "==" "gestion-del-conocimiento/laboratorios" ) ".Params.position" "asc"
+    )}}
     <div>
         <div class="bg-center bg-no-repeat bg-cover h-52 relative"
             style="background-image: url('{{ .Params.image }}');">
@@ -172,14 +174,42 @@
         </div>
     </div>
 </section>
+<section class="py-16 w-11/12 lg:w-10/12 mx-auto">
+    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold pl-4 py-4 bg-pink text-white tk-moby md:w-9/12 xl:w-7/12">
+        Intervenciones </h2>
+    <h2
+        class="text-3xl md:text-4xl lg:text-5xl font-bold pl-4 py-4 bg-pink text-white tk-moby w-9/12 md:w-6/12 xl:w-5/12">
+        artísticas </h2>
+    <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-10 mt-8">
+        {{range ( sort ( where .RegularPages "Type" "==" "gestion-del-conocimiento/intervenciones-artisticas" )
+        ".Params.position" "asc"
+        )}}
+
+        <div class="border-2 border-black relative" >
+            <div class="h-36 bg-cover bg-center" style="background-image: url({{ .Params.image }});"></div>
+            <div class="p-4 space-y-2" style="min-height: 280px;">
+                <span class="font-bold text-xl" style="font-family: Nazare;">{{ .Title }}</span>
+                <p class="truncate-four ">
+                    {{ .Params.description }}
+                </p>
+            </div>
+            <div class="bg-black text-lemon py-2 px-3 text-center w-2/3 absolute" style="bottom: -6%; left: 15%;">
+                <a href="{{ .Permalink }}">ver mas</a>
+            </div>
+        </div>
+        {{end}}
+
+    </div>
+
+</section>
 
 <!-- GALERÍA DE MEMORIAS -->
-<section class="py-16 lg:py-32 xl:py-40">
+<section class="my-16">
     <div
         class="flex flex-col lg:flex-row items-center text-center lg:text-left mx-auto w-10/12 mb-12 lg:mb-20 xl:mb-28">
         <div class="relative lg:w-6/12">
             <h2 class="tk-moby uppercase text-5xl mb-2 lg:mb-3 xl:mb-4">
-                <span class="bg-gainsboro">Galería</span> de memorias
+                <span class="bg-gainsboro">Galería</span> de memorias 2021
                 <img class="inline-flex" src="/images/memorias/lemon-sticky.svg" alt="sticky">
             </h2>
         </div>
@@ -215,12 +245,14 @@
         </div>
         {{ end }}
     </div>
-    <div class="text-center relative">
+    {{/* <div class="text-center relative">
         <a class="tk-moby uppercase" href="https://www.idartes.gov.co/es/agenda" target="_blank">Ver más eventos</a>
         <img class="absolute h-4 lg:h-6 xl:h-7 2xl:h-8 top-8 left-8 md:top-0 lg:-top-3 xl:-top-4 lg:left-4 xl:left-24 2xl:left-32"
             src="/images/memorias/line-shape-left.svg" alt="line shape">
         <img class="absolute h-4 lg:h-6 xl:h-7 2xl:h-8 top-8 right-8 md:top-0 lg:-top-3 xl:-top-4 lg:right-4 xl:right-24 2xl:right-32"
             src="/images/memorias/line-shape-right.svg" alt="line shape">
-    </div>
+    </div> */}}
 </section>
+
+
 {{ end }}

@@ -2,7 +2,7 @@
 <!-- BANNER GALERIA -->
 <div class="grid grid-cols-1 lg:grid-cols-12">
     <div class="lg:col-span-6 relative observer">
-        <img src="{{ .Params.image }}" class="object-center object-cover" alt="{{ .Title }}">
+        <img src="{{ .Params.image }}" class="object-center object-cover" alt="{{ .Title }}" style="height: 75vh;">
         <p
             class="tk-moby-monospaced bg-pink text-white uppercase text-xs p-1 absolute bottom-0 lg:bottom-auto lg:-right-16 lg:top-4 lg:block z-40">
             Memorias
@@ -25,15 +25,15 @@
     </div>
 </div>
 <!-- BANNER GALERIA END -->
+
 <section class="py-12 lg:py-16 xl:py-20">
     <div class="mx-auto w-11/12 mb-8 lg:mb-12 xl:mb-16">
         <div class="relative w-11/12 lg:w-8/12 xl:w-7/12 2xl:w-6/12 mx-auto">
-            <p>{{ .Description }}</p>
+            <p class="lg:text-xl">{{ .Description }}</p>
             <img class="absolute -top-2 -left-36 hidden lg:block" src="/images/sticky-blue.svg" alt="sticky">
         </div>
     </div>
     <div class="mx-auto w-10/12">
-
         <div class="mx-auto">
             <div style="--swiper-navigation-color: #000; --swiper-pagination-color: #000"
                 class="swiper swiper-galeria overflow-hidden relative mb-4">

@@ -1,0 +1,16 @@
+---
+title: Laboratorio Arte, ciencia y tecnología en la gestión del conocimiento 
+date_label: 07 de octubre del 2022
+workshop: Alfonso Pretelt 
+what: Esta intervención artística estaba programada para ser parte de los Encuentros NERD 2022 en el domo del planetario y el cierre de los Laboratorios MAPAS.  La idea principal fue emplear el material generado en los dos laboratorios impartidos, en su mayoría bases de datos e información sistematizada y modificada en archivos sonoros, con el fin de volcar al lenguaje artístico las herramientas dadas y conceptos transmitidos.
+whatDB: 
+weDid: La intervención constó de una instalación audiovisual de sonificación de datos y la visualización del material trabajado en los laboratorios con Alfonso Pretelt por medio de software libre. 
+weDidTool: 
+description: Esta intervención fue el cierre de los laboratorios en el Castillo de las Artes. Este mosaico consistió en la reconstrucción de una imagen cambiando píxeles por más imágenes, con un valor similar en color y brillo al píxel original. 
+image: /images/intervenciones/intervencion-4.jpg
+images:
+    - /images/memorias/arte-ky/ky-1.jpg
+    - /images/memorias/arte-ky/ky-2.jpg
+    - /images/memorias/arte-ky/ky-3.jpg
+type: gestion-del-conocimiento/intervenciones-artisticas
+---
