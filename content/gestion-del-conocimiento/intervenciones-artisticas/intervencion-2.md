@@ -9,8 +9,12 @@ weDidTool:
 description: Esta intervención se vinculó al segundo laboratorio MAPAS, en el que construimos un mapa  de actores del ecosistema artístico y cultural de la red de espacios independientes de Bogotá.
 image: /images/intervenciones/intervencion-2.jpg
 images:
-    - /images/memorias/arte-ky/ky-1.jpg
-    - /images/memorias/arte-ky/ky-2.jpg
-    - /images/memorias/arte-ky/ky-3.jpg
+    - /images/intervenciones/intervencion_2/1.jpg
+    - /images/intervenciones/intervencion_2/2.jpg
+    - /images/intervenciones/intervencion_2/3.jpg
+    - /images/intervenciones/intervencion_2/4.jpg
+    - /images/intervenciones/intervencion_2/5.jpg
+    - /images/intervenciones/intervencion_2/6.jpg
+  
 type: gestion-del-conocimiento/intervenciones-artisticas
 ---

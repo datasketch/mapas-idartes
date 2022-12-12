@@ -9,8 +9,14 @@ weDidTool: https://www.datasketch.co/dashboard/apps/exec/wordcloud
 description: 
 image: /images/intervenciones/intervencion-1.jpg
 images:
-    - /images/memorias/arte-ky/ky-1.jpg
-    - /images/memorias/arte-ky/ky-2.jpg
-    - /images/memorias/arte-ky/ky-3.jpg
+    - /images/intervenciones/intervencion_1/1.jpg
+    - /images/intervenciones/intervencion_1/2.jpg
+    - /images/intervenciones/intervencion_1/3.jpg
+    - /images/intervenciones/intervencion_1/4.jpg
+    - /images/intervenciones/intervencion_1/5.jpg
+    - /images/intervenciones/intervencion_1/6.jpg
+    - /images/intervenciones/intervencion_1/7.jpg
+    - /images/intervenciones/intervencion_1/8.jpg
+  
 type: gestion-del-conocimiento/intervenciones-artisticas
 ---

@@ -9,8 +9,14 @@ weDidTool:
 description: Esta intervención fue el cierre de los laboratorios en el Castillo de las Artes. Este mosaico consistió en la reconstrucción de una imagen cambiando píxeles por más imágenes, con un valor similar en color y brillo al píxel original. 
 image: /images/intervenciones/intervencion-4.jpg
 images:
-    - /images/memorias/arte-ky/ky-1.jpg
-    - /images/memorias/arte-ky/ky-2.jpg
-    - /images/memorias/arte-ky/ky-3.jpg
+    - /images/intervenciones/intervencion_4/1.jpg
+    - /images/intervenciones/intervencion_4/2.jpg
+    - /images/intervenciones/intervencion_4/3.jpg
+    - /images/intervenciones/intervencion_4/4.jpg
+    - /images/intervenciones/intervencion_4/5.png
+    - /images/intervenciones/intervencion_4/6.png
+    - /images/intervenciones/intervencion_4/7.png
+    - /images/intervenciones/intervencion_4/8.png
+  
 type: gestion-del-conocimiento/intervenciones-artisticas
 ---
