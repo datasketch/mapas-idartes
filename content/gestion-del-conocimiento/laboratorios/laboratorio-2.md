@@ -14,13 +14,14 @@ type: gestion-del-conocimiento/laboratorios
 image: /images/laboratorios/lab-2.jpg
 
 gallery:
-        - /images/memorias/arte-ky/ky-1.jpg
-        - /images/memorias/arte-ky/ky-2.jpg
-        - /images/memorias/arte-ky/ky-3.jpg
-        - /images/memorias/arte-ky/ky-1.jpg
-        - /images/memorias/arte-ky/ky-2.jpg
-        - /images/memorias/arte-ky/ky-3.jpg
-        - /images/memorias/arte-ky/ky-1.jpg
+        - /images/laboratorios/laboratorio_2/1.jpg
+        - /images/laboratorios/laboratorio_2/2.jpg
+        - /images/laboratorios/laboratorio_2/3.jpg
+        - /images/laboratorios/laboratorio_2/4.jpg
+        - /images/laboratorios/laboratorio_2/5.jpg
+        - /images/laboratorios/laboratorio_2/6.jpg
+        - /images/laboratorios/laboratorio_2/7.jpg
+        
 videos: 
       - https://player.vimeo.com/video/780199633
       - https://player.vimeo.com/video/780360232

@@ -102,7 +102,7 @@
                 <div class="swiper-wrapper">
                     {{ range .Params.gallery }}
                     <div class="swiper-slide">
-                        <img class="w-10/12 mx-auto max-w-5xl" style="height: 500px;" src="{{ . | absURL }}" alt="">
+                        <img class="w-auto mx-auto max-w-5xl" style="height: 500px;" src="{{ . | absURL }}" alt="">
                     </div>
                     {{ end }}
                 </div>
