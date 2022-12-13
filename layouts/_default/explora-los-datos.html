@@ -1,32 +1,53 @@
 {{ define "main" }}
 <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
-    <div
-        class="bg-banner-explora-datos-lg bg-cover bg-center py-12 lg:py-16 xl:py-20 lg:col-start-1 lg:col-end-13 observer">
-        <div class="mx-auto w-10/12 text-white">
-            <div class="w-full lg:w-8/12">
-                <h1
-                    class="tk-moby uppercase text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-4 lg:mb-6 xl:mb-8 border-b-2 pb-4 lg:pb-6 xl:pb-8 border-white">
-                    Explora los datos
-                </h1>
-                <p class="lg:text-lg xl:text-xl lg:w-8/12">
-                    Aquí encontrarás la visualización de los datos correspondientes a la información disponible de los
-                    programas/ estrategias de la Línea de Sostenibilidad del Idartes.
-                </p>
-            </div>
-        </div>
+  <div
+    class="bg-banner-explora-datos-lg bg-cover bg-center py-12 lg:py-16 xl:py-20 lg:col-start-1 lg:col-end-13 observer">
+    <div class="mx-auto w-10/12 text-white">
+      <div class="w-full lg:w-8/12">
+        <h1
+          class="tk-moby uppercase text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-4 lg:mb-6 xl:mb-8 border-b-2 pb-4 lg:pb-6 xl:pb-8 border-white">
+          Explora los datos
+        </h1>
+        <p class="lg:text-lg xl:text-xl lg:w-8/12">
+          Aquí encontrarás la visualización de los datos correspondientes a la información disponible de los
+          programas/ estrategias de la Línea de Sostenibilidad del Idartes.
+        </p>
+      </div>
     </div>
+  </div>
 </div>
 
-<div class="mt-12 pb-12 lg:py-16 xl:py-20 space-y-6">
-    <details class="details">
-        <summary class="uppercase  text-white bg-black w-1/3 mx-auto p-2 text-center">cómo utilizar esta herramienta
-        </summary>
-        <p class="w-10/12 mx-auto ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eos magnam eligendi fugiat sed doloribus illo
-            necessitatibus odio soluta id facere repellat numquam minus facilis, deleniti sequi doloremque dolorem qui?
-        </p>
-    </details>
-    <iframe class="w-11/12 mx-auto h-screen" src="https://datasketch.shinyapps.io/idartes-mapas-redes-p/"
-        frameborder="0"></iframe>
+<div class="mt-12 mb-6">
+  <details class="details">
+    <summary class="uppercase  text-white bg-black w-10/12 md:w-1/3 mx-auto p-2 text-center">cómo utilizar esta herramienta
+    </summary>
+    <div class="w-10/12 mx-auto mt-4">
+      <p>
+        Realiza múltiples cruces de información y genera gráficos para visualizar y analizar los datos de los programas
+        de La
+        Línea de Sostenibilidad del Ecosistema Artístico de Bogotá.
+        <br>
+        <br>
+        En la red de nodos encuentras una barra a la izquierda donde puedes seleccionar diferentes variables para los
+        datos y
+        también puedes seleccionar un layout para visualizar las redes.
+        <br>
+        <br>
+        En la visualización de barras, puedes encontrar diferentes preguntas por defecto que te permitiran ver los datos
+        e interactuar con la información que se despliega en la visualización.
+        Por último, encuentras una visualización de tabla que contiene los datos con los que se hicieron los diferentes
+        cruces y
+        visualizaciones.
+        <br>
+        <br>
+        Todas las visualizaciones las puedes descargar en png o jpg para incorporar en tus informes o presentaciones,
+        también te
+        puedes descargar los datos en formato csv.
+      </p>
+    </div>
+  </details>
+  <iframe class="w-11/12 mx-auto h-screen" src="https://datasketch.shinyapps.io/idartes-mapas-redes-p/"
+    frameborder="0"></iframe>
 </div>
 {{/* BASES DE DATOS */}}
 <!-- <section class="py-24 lg:py-32 xl:py-40 relative">

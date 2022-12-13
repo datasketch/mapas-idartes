@@ -1,9 +1,9 @@
 {{ define "main" }}
 {{/* Banner */}}
 <section class="flex flex-col md:flex-row relative">
-  <div class="w-11/12 h-auto lg:w-1/2 bg-cover bg-center" style="background-image: url({{.Params.image}});"></div>
+  <div class="mx-auto h-96 md:h-auto lg:w-1/2 bg-cover md:bg-center" style="background-image: url({{.Params.image}});"></div>
   <div class="w-11/12 lg:w-1/2 mx-auto">
-    <div class="lg:w-1/2 mx-auto py-16 space-y-6">
+    <div class="w-11/12 lg:w-1/2 mx-auto py-8 md:py-16 space-y-6">
       <h2 class="text-4xl font-bold" style="font-family: Nazare;">
         {{ .Title }}
       </h2>
@@ -90,10 +90,10 @@
     <div class="mx-auto">
       <div style="--swiper-navigation-color: #000; --swiper-pagination-color: #000"
         class="swiper swiper-galeria overflow-hidden relative mb-4">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper w-10/12 mx-auto">
           {{ range .Params.gallery }}
           <div class="swiper-slide">
-            <img class="w-auto mx-auto max-w-5xl" style="height: 500px;" src="{{ . | absURL }}" alt="">
+            <img class="w-auto mx-auto" style="height: 500px; max-width: 85%;" src="{{ . | absURL }}" alt="">
           </div>
           {{ end }}
         </div>

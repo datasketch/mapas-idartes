@@ -5,6 +5,8 @@ const nextButton = document.querySelector('.swiper-custom-next');
 const nextButton2 = document.querySelector('.swiper-custom-next2');
 const next = document.querySelector('.swiper-button-next');
 const prev = document.querySelector('.swiper-button-prev');
+const nextInter = document.querySelector('.swiper-button-next');
+const prevInter = document.querySelector('.swiper-button-prev');
 const nextVideo = document.querySelector('.swiper-video-next');
 const prevVideo = document.querySelector('.swiper-video-prev');
 
@@ -35,6 +37,7 @@ const conf = {
     },
   },
 };
+
 const conf2 = {
   slidesPerView: 1,
   spaceBetween: 10,
@@ -67,7 +70,7 @@ const swiperEnlace = new Swiper('.swiper-enlaces', conf);
 const swiperDocumento = new Swiper('.swiper-documentos', conf2);
 
 const swiperVideoWrapper = document.querySelector('.swiper-video');
-const swiperVideos = new Swiper(swiperVideoWrapper.querySelector('.swiper'), {
+const swiperVideos = new Swiper(swiperVideoWrapper?.querySelector('.swiper'), {
   navigation: {
     nextEl: nextVideo,
     prevEl: prevVideo,
@@ -88,13 +91,22 @@ const swiperGaleria = new Swiper('.swiper-galeria', {
     prevEl: '.swiper-button-prev',
   },
 });
+const swiperInterWrapper= document.querySelector('.swiper-inter');
+const swiperInter = new Swiper(swiperInterWrapper.querySelector('.swiper'), {
+  loop: true,
+  autoPlay: true,
+  navigation: {
+    nextEl: nextInter,
+    prevEl: prevInter,
+  },
+
+});
 
 const swiperMemorias = new Swiper('.swiper-memorias', {
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-    disabledClass: 'opacity-40',
   },
 });
 
@@ -102,27 +114,36 @@ const swiperMemorias = new Swiper('.swiper-memorias', {
 nextButton?.addEventListener('click', () => swiperEnlace.slideNext());
 nextButton2?.addEventListener('click', () => swiperDocumento.slideNext());
 
-next.addEventListener('click', () => {
+next?.addEventListener('click', () => {
   swiperGaleria.slideNext();
 });
 
-prev.addEventListener('click', () => {
+prev?.addEventListener('click', () => {
   swiperGaleria.slidePrev();
 });
 
-next.addEventListener('click', () => {
+next?.addEventListener('click', () => {
   swiperMemorias.slideNext();
 });
 
-prev.addEventListener('click', () => {
+prev?.addEventListener('click', () => {
   swiperMemorias.slidePrev();
 });
 
-nextVideo.addEventListener('click', () => {
+nextInter?.addEventListener('click', () => {
+  swiperInter.slideNext();
+});
+
+prevInter?.addEventListener('click', () => {
+  swiperInter.slidePrev();
+});
+
+nextVideo?.addEventListener('click', () => {
   swiperVideos.slideNext();
 });
 
-prevVideo.addEventListener('click', () => {
+prevVideo?.addEventListener('click', () => {
   swiperVideos.slidePrev();
 });
 
+console.log('luis');

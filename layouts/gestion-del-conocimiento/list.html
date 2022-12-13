@@ -1,318 +1,317 @@
 {{ define "main" }}
 <!-- Nuevo banner gestion del conocimiento -->
 <section class="flex flex-col lg:flex-row relative">
-    <p class="tk-moby-monospaced bg-pink text-white uppercase text-xs p-1 absolute z-10 lg:top-4" style="left:46%;">
-        Mapas II
-    </p>
-    <div class="h-52 lg:w-1/2 bg-cover bg-center lg:h-auto"
-        style="background-image: url(/images/gestion-del-conocimiento.png); ">
-    </div>
+  <p class="tk-moby-monospaced bg-pink text-white uppercase text-xs p-1 absolute z-10 lg:top-4" style="left:46%;">
+    Mapas II
+  </p>
+  <div class="h-52 lg:w-1/2 bg-cover bg-center lg:h-auto"
+    style="background-image: url(/images/gestion-del-conocimiento.png); ">
+  </div>
 
-    <div class="lg:w-1/2 bg-gainsboro  flex items-center justify-center ">
-        <div class="w-2/3 space-y-4 py-16 lg:py-36">
-            <h2 class="font-bold text-2xl md:text-3xl lg:text-4xl xl:text-5xl tk-moby-monospaced">¿Que es?</h2>
-            <p class="text-lg">
-                Es uno de los componentes del ecosistema artístico y cultural para identificar, diagnosticar y
-                caracterizar prácticas
-                sostenibles, redes colaborativas, mapeo de agentes, circuitos locales y entornos comunitarios. (Tomado
-                de la página web
-                de la línea de sostenibilidad).
-        </div>
+  <div class="lg:w-1/2 bg-gainsboro  flex items-center justify-center ">
+    <div class="w-11/12 mx-auto md:w-2/3 space-y-4 py-16 lg:py-36">
+      <h2 class="font-bold text-2xl md:text-3xl lg:text-4xl xl:text-5xl tk-moby-monospaced">¿Que es?</h2>
+      <p class="text-lg">
+        Es uno de los componentes del ecosistema artístico y cultural para identificar, diagnosticar y
+        caracterizar prácticas
+        sostenibles, redes colaborativas, mapeo de agentes, circuitos locales y entornos comunitarios. (Tomado
+        de la página web
+        de la línea de sostenibilidad).
     </div>
-    <img class="absolute hidden lg:block -bottom-10 left-5/12 z-10" src="/images/memorias/stair-rounded.svg"
-        alt="stair">
+  </div>
+  <img class="absolute hidden lg:block -bottom-10 left-5/12 z-10" src="/images/memorias/stair-rounded.svg" alt="stair">
 </section>
 <!-- banner end -->
 
 
 {{/* Laboratorios */}}
 <section class="py-16 lg:py-20  max-w-screen-lg mx-auto w-10/12 lg:w-full grid md:grid-cols-2 gap-x-16 gap-y-20">
-    <div class="w-full space-y-4">
-        <h2 class="text-5xl font-bold" style="font-family: Nazare;"><span class="bg-gainsboro">laboratorios </span>
-            mapas
-            <img class="inline-flex" src="/images/memorias/blue-sticky.svg" alt="">
-        </h2>
-        <p class="text-lg">
-            Son espacios de apropiación, interacción e intercambio para la gestión del conocimiento en el arte y la
-            cultura. Los
-            ejes centrales son redes colaborativas, sistemas de información y herramientas de exploración e innovación
-            artística.
-            Cada laboratorio consistió en dos sesiones, una teórica y otra práctica. En la sesión teórica se adentraba
-            en los
-            conceptos básicos de los ejes temáticos y en la sesión práctica se hacían ejercicios compilando lo visto
-            anteriormente.
+  <div class="w-full space-y-4">
+    <h2 class="text-5xl font-bold" style="font-family: Nazare;"><span class="bg-gainsboro">laboratorios </span>
+      mapas
+      <img class="inline-flex" src="/images/memorias/blue-sticky.svg" alt="">
+    </h2>
+    <p class="text-lg">
+      Son espacios de apropiación, interacción e intercambio para la gestión del conocimiento en el arte y la
+      cultura. Los
+      ejes centrales son redes colaborativas, sistemas de información y herramientas de exploración e innovación
+      artística.
+      Cada laboratorio consistió en dos sesiones, una teórica y otra práctica. En la sesión teórica se adentraba
+      en los
+      conceptos básicos de los ejes temáticos y en la sesión práctica se hacían ejercicios compilando lo visto
+      anteriormente.
 
-        </p>
-    </div>
+    </p>
+  </div>
 
-    {{range ( sort ( where .RegularPages "Type" "==" "gestion-del-conocimiento/laboratorios" ) ".Params.position" "asc"
-    )}}
-    <div>
-        <div class="bg-center bg-no-repeat bg-cover h-52 relative"
-            style="background-image: url('{{ .Params.image }}');">
-            <div class="bg-blue w-1/3 text-white p-1 z-10 absolute -top-3" style="font-family: Nazare;">{{ .Params.tag
-                }}
-            </div>
-        </div>
-        <div class="bg-gainsboro flex flex-col gap-y-6">
-            <div class="pt-12 px-6 space-y-5">
-                <p class="tk-ibm-plex-mono">{{ .Params.days }}</p>
-                <p class="text-xl" style="font-family: Nazare;">{{.Title}}</p>
-                <p class="tk-ibm-plex-mono text-lg">Facilitador/a: {{ .Params.facilitator }}</p>
-            </div>
-            <a class="tk-moby font-bold text-lemon px-4 py-1.5 w-1/3 bg-black" href="{{.Permalink}}">Ver más</a>
-        </div>
+  {{range ( sort ( where .RegularPages "Type" "==" "gestion-del-conocimiento/laboratorios" ) ".Params.position" "asc"
+  )}}
+  <div>
+    <div class="bg-center bg-no-repeat bg-cover h-52 relative" style="background-image: url('{{ .Params.image }}');">
+      <div class="bg-blue w-1/3 text-white p-1 z-10 absolute -top-3" style="font-family: Nazare;">{{ .Params.tag
+        }}
+      </div>
     </div>
-    {{end}}
+    <div class="bg-gainsboro flex flex-col gap-y-6">
+      <div class="pt-12 px-6 space-y-5">
+        <p class="tk-ibm-plex-mono">{{ .Params.days }}</p>
+        <p class="text-xl" style="font-family: Nazare;">{{.Title}}</p>
+        <p class="tk-ibm-plex-mono text-lg">Facilitador/a: {{ .Params.facilitator }}</p>
+      </div>
+      <a class="tk-moby font-bold text-lemon px-4 py-1.5 w-1/3 bg-black" href="{{.Permalink}}">Ver más</a>
+    </div>
+  </div>
+  {{end}}
 
 </section>
 {{/* Laboratorios */}}
 
 <section class="max-w-screen-lg mx-auto w-10/12 lg:w-full grid md:grid-cols-2 gap-x-16">
-    <div class="relative space-y-2">
-        <p>Laboratorios de creación colaborativa</p>
-        <h2 class="text-4xl lg:text-6xl font-black" style="font-family: Nazare;">El castillo de las Artes
-            <sup><img class="inline-flex" src="/images/memorias/sup-star.svg" alt=""></sup>
-        </h2>
-        <div class="absolute -left-6" style="top: -10%;"><img src="/images/memorias/gradient-bar.svg" alt=""></div>
+  <div class="relative space-y-2">
+    <p>Laboratorios de creación colaborativa</p>
+    <h2 class="text-4xl lg:text-6xl font-black" style="font-family: Nazare;">El castillo de las Artes
+      <sup><img class="inline-flex" src="/images/memorias/sup-star.svg" alt=""></sup>
+    </h2>
+    <div class="absolute -left-6" style="top: -10%;"><img src="/images/memorias/gradient-bar.svg" alt=""></div>
 
-    </div>
-    <div class="relative">
-        <p class="tk-ibm-plex-mono py-8">
-            La Línea de Sostenibilidad del Ecosistema Artístico del Instituto Distrital de las Artes - Idartes y
-            Datasketch se unen
-            para invitar a participar en los laboratorios que buscan dar a conocer y fomentar la ideación de narrativas
-            escritas y
-            gráficas de los procesos sociales y culturales que se desarrollan en el territorio artístico del barrio
-            Santa Fe.
-        </p>
-        <div class="absolute -right-10" style="top: -120%;"><img src="/images/memorias/gradient-bar2.svg" alt=""></div>
-    </div>
+  </div>
+  <div class="relative">
+    <p class="tk-ibm-plex-mono py-8">
+      La Línea de Sostenibilidad del Ecosistema Artístico del Instituto Distrital de las Artes - Idartes y
+      Datasketch se unen
+      para invitar a participar en los laboratorios que buscan dar a conocer y fomentar la ideación de narrativas
+      escritas y
+      gráficas de los procesos sociales y culturales que se desarrollan en el territorio artístico del barrio
+      Santa Fe.
+    </p>
+    <div class="absolute -right-10" style="top: -120%;"><img src="/images/memorias/gradient-bar2.svg" alt=""></div>
+  </div>
 </section>
 
 <section class="max-w-screen-lg mx-auto bg-cover bg-center pt-12 relative"
-    style="background-image: url('/images/memorias/bg-portafolio.png');">
-    <div class="p-2 bg-white tk-moby w-1/2 md:w-1/3 absolute top-0 left-10 text-2xl">Portafolios</div>
-    <div class="w-11/12 mx-auto">
-        <div class="border-b-2 border-lemon flex flex-col md:flex-row justify-between py-3.5 pl-10 text-white">
-            <div class="text-lg" style="font-family: Nazare;">Danza</div>
-            <div class="space-y-2">
-                <div class="flex gap-x-2  items-center justify-between">
-                    <span>Ana Celia Lugo</span>
-                    <a href="/docs/portafolios/danza/AnaCeliaLugo.pdf" type="button" class="bg-black text-lemon p-2 tk-moby"
-                        download>Descargar</a>
-                </div>
-                <div class="flex gap-x-2 items-center justify-between">
-                    <span>Danzarte Fantasía</span>
-                    <a href="/docs/portafolios/danza/DanzarteFantasia.pdf" type="button"
-                        class="bg-black text-lemon p-2 tk-moby" download>Descargar</a>
-                </div>
-                <div class="flex gap-x-2 items-center justify-between">
-                    <span>Sonia Hoyos Mantilla</span>
-                    <a href="/docs/portafolios/danza/Sonia Hoyos Mantilla.pdf" type="button"
-                        class="bg-black text-lemon p-2 tk-moby" download>Descargar</a>
-                </div>
-
-            </div>
+  style="background-image: url('/images/memorias/bg-portafolio.png');">
+  <div class="p-2 bg-white tk-moby w-1/2 md:w-1/3 absolute top-0 left-10 text-2xl">Portafolios</div>
+  <div class="w-11/12 mx-auto">
+    <div class="border-b-2 border-lemon flex flex-col md:flex-row justify-between py-3.5 pl-10 text-white">
+      <div class="text-lg" style="font-family: Nazare;">Danza</div>
+      <div class="space-y-2">
+        <div class="flex gap-x-2  items-center justify-between">
+          <span>Ana Celia Lugo</span>
+          <a href="/docs/portafolios/danza/AnaCeliaLugo.pdf" type="button" class="bg-black text-lemon p-2 tk-moby"
+            download>Descargar</a>
         </div>
-        <div class="border-b-2 border-lemon flex flex-col md:flex-row justify-between py-3.5 pl-10 text-white">
-            <div class="text-lg" style="font-family: Nazare;">Emprendimientos</div>
-            <div class="space-y-2">
-                <div class="flex gap-x-2 items-center justify-between">
-                    <span>Aguanta la Música</span>
-                    <a href="/docs/portafolios/emprendimientos/Aguanta la Música.pdf" type="button" class="bg-black text-lemon p-2 tk-moby"
-                        download>Descargar</a>
-                </div>
-                <div class="flex gap-x-2 items-center justify-between">
-                    <span>Alma y Lana</span>
-                    <a href="/docs/portafolios/emprendimientos/Alma y Lana.pdf" type="button" class="bg-black text-lemon p-2 tk-moby"
-                        download>Descargar</a>
-                </div>
-                <div class="flex gap-x-2 items-center justify-between">
-                    <span>Caven_beard Ilustra</span>
-                    <a href="/docs/portafolios/emprendimientos/Caven_beard Ilustra.pdf" type="button" class="bg-black text-lemon p-2 tk-moby"
-                        download>Descargar</a>
-                </div>
-                <div class="flex gap-x-2 items-center justify-between">
-                    <span>Colectivo Guapucha</span>
-                    <a href="/docs/portafolios/emprendimientos/Colectivo Guapucha.pdf" type="button" class="bg-black text-lemon p-2 tk-moby"
-                        download>Descargar</a>
-                </div>
-                <div class="flex gap-x-2 items-center justify-between">
-                    <span>Escuela de Cultura CampEspacio de Arte Juli Saenz.pdfesina</span>
-                    <a href="/docs/portafolios/emprendimientos/Escuela de Cultura Campesina.pdf" type="button" class="bg-black text-lemon p-2 tk-moby"
-                        download>Descargar</a>
-                </div>
-                <div class="flex gap-x-2 items-center justify-between">
-                    <span>Espacio de Arte Juli Saenz</span>
-                    <a href="/docs/portafolios/emprendimientos/Espacio de Arte Juli Saenz.pdf" type="button" class="bg-black text-lemon p-2 tk-moby"
-                        download>Descargar</a>
-                </div>
-                <div class="flex gap-x-2 items-center justify-between">
-                    <span>La chinita</span>
-                    <a href="/docs/portafolios/emprendimientos/La chinita.pdf" type="button" class="bg-black text-lemon p-2 tk-moby"
-                        download>Descargar</a>
-                </div>
-                <div class="flex gap-x-2 items-center justify-between">
-                    <span>Leatherskin</span>
-                    <a href="/docs/portafolios/emprendimientos/Leatherskin.pdf" type="button" class="bg-black text-lemon p-2 tk-moby"
-                        download>Descargar</a>
-                </div>
-                <div class="flex gap-x-2 items-center justify-between">
-                    <span>Luxofilus</span>
-                    <a href="/docs/portafolios/emprendimientos/Luxofilus.pdf" type="button" class="bg-black text-lemon p-2 tk-moby"
-                        download>Descargar</a>
-                </div>
-                <div class="flex gap-x-2 items-center justify-between">
-                    <span>Mc.q8</span>
-                    <a href="/docs/portafolios/emprendimientos/Mc.q8.pdf" type="button" class="bg-black text-lemon p-2 tk-moby"
-                        download>Descargar</a>
-                </div>
-                <div class="flex gap-x-2 items-center justify-between">
-                    <span>Piisani Estudio de Diseño</span>
-                    <a href="/docs/portafolios/emprendimientos/Piisani Estudio de Diseño.pdf" type="button" class="bg-black text-lemon p-2 tk-moby"
-                        download>Descargar</a>
-                </div>
-                <div class="flex gap-x-2 items-center justify-between">
-                    <span>Portafolio AM Creaciones</span>
-                    <a href="/docs/portafolios/emprendimientos/Portafolio AM Creaciones.pdf" type="button" class="bg-black text-lemon p-2 tk-moby"
-                        download>Descargar</a>
-                </div>
-                <div class="flex gap-x-2 items-center justify-between">
-                    <span>Profe.pepi</span>
-                    <a href="/docs/portafolios/emprendimientos/Profe.pepi.pdf" type="button" class="bg-black text-lemon p-2 tk-moby"
-                        download>Descargar</a>
-                </div>
-            </div>
+        <div class="flex gap-x-2 items-center justify-between">
+          <span>Danzarte Fantasía</span>
+          <a href="/docs/portafolios/danza/DanzarteFantasia.pdf" type="button" class="bg-black text-lemon p-2 tk-moby"
+            download>Descargar</a>
         </div>
-        <div class="border-b-2 border-lemon flex flex-col md:flex-row justify-between py-3.5 pl-10 text-white">
-            <div class="text-lg" style="font-family: Nazare;">Interdisciplinar</div>
-            <div class="space-y-2">
-                <div class="flex gap-x-2  items-center justify-between">
-                    <span>Delio Escamilla</span>
-                    <a href="/docs/portafolios/inter/Delio Escamilla.pdf" type="button" class="bg-black text-lemon p-2 tk-moby"
-                        download>Descargar</a>
-                </div>
-                <div class="flex gap-x-2 items-center justify-between">
-                    <span>House of Evangelista</span>
-                    <a href="/docs/portafolios/inter/House of Evangelista.pdf" type="button" class="bg-black text-lemon p-2 tk-moby"
-                        download>Descargar</a>
-                </div>
-                <div class="flex gap-x-2 items-center justify-between">
-                    <span>Lucas Torres</span>
-                    <a href="/docs/portafolios/inter/Lucas Torres.pdf" type="button" class="bg-black text-lemon p-2 tk-moby"
-                        download>Descargar</a>
-                </div>
-        
-            </div>
-        </div>
-        <div class=" flex flex-col md:flex-row justify-between py-3.5 pl-10 text-white">
-            <div class="text-lg" style="font-family: Nazare;">Música</div>
-            <div class="space-y-2">
-                <div class="flex gap-x-2  items-center justify-between">
-                    <span>José Ricardo Rodríguez</span>
-                    <a href="/docs/portafolios/musica/José Ricardo Rodríguez.pdf" type="button" class="bg-black text-lemon p-2 tk-moby"
-                        download>Descargar</a>
-                </div>               
-        
-            </div>
+        <div class="flex gap-x-2 items-center justify-between">
+          <span>Sonia Hoyos Mantilla</span>
+          <a href="/docs/portafolios/danza/Sonia Hoyos Mantilla.pdf" type="button"
+            class="bg-black text-lemon p-2 tk-moby" download>Descargar</a>
         </div>
 
-
+      </div>
     </div>
-    <div
-        class="relative w-10/12 md:w-8/12 mx-auto flex gap-x-4 justify-between items-center border-2 border-black p-6 bg-white transform translate-y-6">
-        <div class="absolute -top-1/3 md:-top-1/2 -left-12">
-            <img src="/images/memorias/elipse-lemo.svg" alt="">
+    <div class="border-b-2 border-lemon flex flex-col md:flex-row justify-between py-3.5 pl-10 text-white">
+      <div class="text-lg" style="font-family: Nazare;">Emprendimientos</div>
+      <div class="space-y-2">
+        <div class="flex gap-x-2 items-center justify-between">
+          <span>Aguanta la Música</span>
+          <a href="/docs/portafolios/emprendimientos/Aguanta la Música.pdf" type="button"
+            class="bg-black text-lemon p-2 tk-moby" download>Descargar</a>
         </div>
-        <div class=" text-blue tk-moby text-center md:text-xl" style="max-width: 50%;">Enlace de interes</div>
-
-        <div class="flex flex-col items-center ">
-            <div class="">¿Cómo hacer tu portafolio?</div>
-            <div class="bg-black text-lemon py-2 px-3 text-center absolute -bottom-5">
-                <a href="/docs/Cómo hacer tu propio portafolio.pdf" target="_blank" download="">Descargar</a>
-            </div>
+        <div class="flex gap-x-2 items-center justify-between">
+          <span>Alma y Lana</span>
+          <a href="/docs/portafolios/emprendimientos/Alma y Lana.pdf" type="button"
+            class="bg-black text-lemon p-2 tk-moby" download>Descargar</a>
         </div>
+        <div class="flex gap-x-2 items-center justify-between">
+          <span>Caven_beard Ilustra</span>
+          <a href="/docs/portafolios/emprendimientos/Caven_beard Ilustra.pdf" type="button"
+            class="bg-black text-lemon p-2 tk-moby" download>Descargar</a>
+        </div>
+        <div class="flex gap-x-2 items-center justify-between">
+          <span>Colectivo Guapucha</span>
+          <a href="/docs/portafolios/emprendimientos/Colectivo Guapucha.pdf" type="button"
+            class="bg-black text-lemon p-2 tk-moby" download>Descargar</a>
+        </div>
+        <div class="flex gap-x-2 items-center justify-between">
+          <span>Escuela de Cultura CampEspacio de Arte Juli Saenz.pdfesina</span>
+          <a href="/docs/portafolios/emprendimientos/Escuela de Cultura Campesina.pdf" type="button"
+            class="bg-black text-lemon p-2 tk-moby" download>Descargar</a>
+        </div>
+        <div class="flex gap-x-2 items-center justify-between">
+          <span>Espacio de Arte Juli Saenz</span>
+          <a href="/docs/portafolios/emprendimientos/Espacio de Arte Juli Saenz.pdf" type="button"
+            class="bg-black text-lemon p-2 tk-moby" download>Descargar</a>
+        </div>
+        <div class="flex gap-x-2 items-center justify-between">
+          <span>La chinita</span>
+          <a href="/docs/portafolios/emprendimientos/La chinita.pdf" type="button"
+            class="bg-black text-lemon p-2 tk-moby" download>Descargar</a>
+        </div>
+        <div class="flex gap-x-2 items-center justify-between">
+          <span>Leatherskin</span>
+          <a href="/docs/portafolios/emprendimientos/Leatherskin.pdf" type="button"
+            class="bg-black text-lemon p-2 tk-moby" download>Descargar</a>
+        </div>
+        <div class="flex gap-x-2 items-center justify-between">
+          <span>Luxofilus</span>
+          <a href="/docs/portafolios/emprendimientos/Luxofilus.pdf" type="button"
+            class="bg-black text-lemon p-2 tk-moby" download>Descargar</a>
+        </div>
+        <div class="flex gap-x-2 items-center justify-between">
+          <span>Mc.q8</span>
+          <a href="/docs/portafolios/emprendimientos/Mc.q8.pdf" type="button" class="bg-black text-lemon p-2 tk-moby"
+            download>Descargar</a>
+        </div>
+        <div class="flex gap-x-2 items-center justify-between">
+          <span>Piisani Estudio de Diseño</span>
+          <a href="/docs/portafolios/emprendimientos/Piisani Estudio de Diseño.pdf" type="button"
+            class="bg-black text-lemon p-2 tk-moby" download>Descargar</a>
+        </div>
+        <div class="flex gap-x-2 items-center justify-between">
+          <span>Portafolio AM Creaciones</span>
+          <a href="/docs/portafolios/emprendimientos/Portafolio AM Creaciones.pdf" type="button"
+            class="bg-black text-lemon p-2 tk-moby" download>Descargar</a>
+        </div>
+        <div class="flex gap-x-2 items-center justify-between">
+          <span>Profe.pepi</span>
+          <a href="/docs/portafolios/emprendimientos/Profe.pepi.pdf" type="button"
+            class="bg-black text-lemon p-2 tk-moby" download>Descargar</a>
+        </div>
+      </div>
     </div>
+    <div class="border-b-2 border-lemon flex flex-col md:flex-row justify-between py-3.5 pl-10 text-white">
+      <div class="text-lg" style="font-family: Nazare;">Interdisciplinar</div>
+      <div class="space-y-2">
+        <div class="flex gap-x-2  items-center justify-between">
+          <span>Delio Escamilla</span>
+          <a href="/docs/portafolios/inter/Delio Escamilla.pdf" type="button" class="bg-black text-lemon p-2 tk-moby"
+            download>Descargar</a>
+        </div>
+        <div class="flex gap-x-2 items-center justify-between">
+          <span>House of Evangelista</span>
+          <a href="/docs/portafolios/inter/House of Evangelista.pdf" type="button"
+            class="bg-black text-lemon p-2 tk-moby" download>Descargar</a>
+        </div>
+        <div class="flex gap-x-2 items-center justify-between">
+          <span>Lucas Torres</span>
+          <a href="/docs/portafolios/inter/Lucas Torres.pdf" type="button" class="bg-black text-lemon p-2 tk-moby"
+            download>Descargar</a>
+        </div>
+
+      </div>
+    </div>
+    <div class=" flex flex-col md:flex-row justify-between py-3.5 pl-10 text-white">
+      <div class="text-lg" style="font-family: Nazare;">Música</div>
+      <div class="space-y-2">
+        <div class="flex gap-x-2  items-center justify-between">
+          <span>José Ricardo Rodríguez</span>
+          <a href="/docs/portafolios/musica/José Ricardo Rodríguez.pdf" type="button"
+            class="bg-black text-lemon p-2 tk-moby" download>Descargar</a>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+  <div
+    class="relative w-10/12 md:w-8/12 mx-auto flex gap-x-4 justify-between items-center border-2 border-black p-6 bg-white transform translate-y-6">
+    <div class="absolute -top-1/3 md:-top-1/2 -left-12">
+      <img src="/images/memorias/elipse-lemo.svg" alt="">
+    </div>
+    <div class=" text-blue tk-moby text-center md:text-xl" style="max-width: 50%;">Enlace de interes</div>
+
+    <div class="flex flex-col items-center ">
+      <div class="">¿Cómo hacer tu portafolio?</div>
+      <div class="bg-black text-lemon py-2 px-3 text-center absolute -bottom-5">
+        <a href="/docs/Cómo hacer tu propio portafolio.pdf" target="_blank" download="">Descargar</a>
+      </div>
+    </div>
+  </div>
 </section>
+
 <section class="py-16 w-11/12 lg:w-10/12 mx-auto">
-    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold pl-4 py-4 bg-pink text-white tk-moby md:w-9/12 xl:w-7/12">
-        Intervenciones </h2>
-    <h2
-        class="text-3xl md:text-4xl lg:text-5xl font-bold pl-4 py-4 bg-pink text-white tk-moby w-9/12 md:w-6/12 xl:w-5/12">
-        artísticas </h2>
-    <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-10 mt-8">
-        {{range ( sort ( where .RegularPages "Type" "==" "gestion-del-conocimiento/intervenciones-artisticas" )
-        ".Params.position" "asc"
-        )}}
+  <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold pl-4 py-4 bg-pink text-white tk-moby md:w-9/12 xl:w-7/12">
+    Intervenciones </h2>
+  <h2
+    class="text-3xl md:text-4xl lg:text-5xl font-bold pl-4 py-4 bg-pink text-white tk-moby w-9/12 md:w-6/12 xl:w-5/12">
+    artísticas </h2>
 
-        <div class="border-2 border-black relative">
-            <div class="h-36 bg-cover bg-center" style="background-image: url('{{ .Params.image }}');"></div>
-            <div class="p-4 space-y-2" style="min-height: 280px;">
-                <span class="font-bold text-xl" style="font-family: Nazare;">{{ .Title }}</span>
-                <p class="truncate-four ">
-                    {{ .Params.description }}
-                </p>
-            </div>
-            <div class="bg-black text-lemon py-2 px-3 text-center w-2/3 absolute" style="bottom: -6%; left: 15%;">
-                <a href="{{ .Permalink }}">ver mas</a>
-            </div>
-        </div>
-        {{end}}
+  <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-10 mt-8 w-10/12 mx-auto md:w-full">
+    {{range ( sort ( where .RegularPages "Type" "==" "gestion-del-conocimiento/intervenciones-artisticas" )
+    ".Params.position" "asc"
+    )}}
 
+    <div class="border-2 border-black relative">
+      <div class="h-36 bg-cover bg-center" style="background-image: url('{{ .Params.image }}');"></div>
+      <div class="p-4 space-y-2" style="min-height: 280px;">
+        <span class="font-bold text-xl" style="font-family: Nazare;">{{ .Title }}</span>
+        <p class="truncate-four ">
+          {{ .Params.description }}
+        </p>
+      </div>
+      <div class="bg-black text-lemon py-2 px-3 text-center w-2/3 absolute" style="bottom: -6%; left: 15%;">
+        <a href="{{ .Permalink }}">ver mas</a>
+      </div>
     </div>
+    {{end}}
 
+  </div>
 </section>
 
 <!-- GALERÍA DE MEMORIAS -->
 <section class="my-16">
-    <div
-        class="flex flex-col lg:flex-row items-center text-center lg:text-left mx-auto w-10/12 mb-12 lg:mb-20 xl:mb-28">
-        <div class="relative lg:w-6/12">
-            <h2 class="tk-moby uppercase text-5xl mb-2 lg:mb-3 xl:mb-4">
-                <span class="bg-gainsboro">Galería</span> de memorias 2021
-                <img class="inline-flex" src="/images/memorias/lemon-sticky.svg" alt="sticky">
-            </h2>
-        </div>
-        <div class="lg:w-6/12">
-            <p class="lg:text-lg xl:text-xl">
-                Estos son los momentos destacados de las estrategias pedagógicas implementadas en el proyecto Mapas.
-            </p>
-        </div>
+  <div class="flex flex-col lg:flex-row items-center text-center lg:text-left mx-auto w-10/12 mb-12 lg:mb-20 xl:mb-28">
+    <div class="relative lg:w-6/12">
+      <h2 class="tk-moby uppercase text-5xl mb-2 lg:mb-3 xl:mb-4">
+        <span class="bg-gainsboro">Galería</span> de memorias 2021
+        <img class="inline-flex" src="/images/memorias/lemon-sticky.svg" alt="sticky">
+      </h2>
     </div>
-    <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-20 mx-auto w-10/12 mb-16 lg:mb-32 xl:mb-40">
-        {{range where .RegularPages "Type" "==" "gestion-del-conocimiento/memorias" }}
+    <div class="lg:w-6/12">
+      <p class="lg:text-lg xl:text-xl">
+        Estos son los momentos destacados de las estrategias pedagógicas implementadas en el proyecto Mapas.
+      </p>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-20 mx-auto w-10/12 mb-16 lg:mb-32 xl:mb-40">
+    {{range where .RegularPages "Type" "==" "gestion-del-conocimiento/memorias" }}
 
-        <div class="relative">
-            <div class="aspect-w-16 aspect-h-9">
-                <img class="object-cover object-center w-full h-full" src="{{ .Params.image }}" alt="{{ .Title }}">
-            </div>
-            <div style="background-color: #D8D8D87C;">
-                <div class="px-4 pt-4 pb-12">
-                    <h3 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mb-3 lg:mb-5">
-                        {{ .Title }}
-                    </h3>
-                    <p class="lg:text-lg xl:text-xl">
-                        {{ .Description | truncate 120 }}
-                    </p>
-                </div>
-                <a class="tk-moby font-bold text-sm py-3 px-8 bg-black text-lemon inline-block"
-                    href="{{ or .Params.external_url .Permalink }}">Ver más</a>
-            </div>
-            <ul class="absolute -top-3 left-0">
-                <li class="tk-moby-monospaced bg-pink text-white uppercase text-xs p-1">Sostenibilidad</li>
-            </ul>
+    <div class="relative">
+      <div class="aspect-w-16 aspect-h-9">
+        <img class="object-cover object-center w-full h-full" src="{{ .Params.image }}" alt="{{ .Title }}">
+      </div>
+      <div style="background-color: #D8D8D87C;">
+        <div class="px-4 pt-4 pb-12">
+          <h3 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mb-3 lg:mb-5">
+            {{ .Title }}
+          </h3>
+          <p class="lg:text-lg xl:text-xl">
+            {{ .Description | truncate 120 }}
+          </p>
         </div>
-        {{ end }}
+        <a class="tk-moby font-bold text-sm py-3 px-8 bg-black text-lemon inline-block"
+          href="{{ or .Params.external_url .Permalink }}">Ver más</a>
+      </div>
+      <ul class="absolute -top-3 left-0">
+        <li class="tk-moby-monospaced bg-pink text-white uppercase text-xs p-1">Sostenibilidad</li>
+      </ul>
     </div>
-    {{/* <div class="text-center relative">
-        <a class="tk-moby uppercase" href="https://www.idartes.gov.co/es/agenda" target="_blank">Ver más eventos</a>
-        <img class="absolute h-4 lg:h-6 xl:h-7 2xl:h-8 top-8 left-8 md:top-0 lg:-top-3 xl:-top-4 lg:left-4 xl:left-24 2xl:left-32"
-            src="/images/memorias/line-shape-left.svg" alt="line shape">
-        <img class="absolute h-4 lg:h-6 xl:h-7 2xl:h-8 top-8 right-8 md:top-0 lg:-top-3 xl:-top-4 lg:right-4 xl:right-24 2xl:right-32"
-            src="/images/memorias/line-shape-right.svg" alt="line shape">
-    </div> */}}
+    {{ end }}
+  </div>
+  {{/* <div class="text-center relative">
+    <a class="tk-moby uppercase" href="https://www.idartes.gov.co/es/agenda" target="_blank">Ver más eventos</a>
+    <img
+      class="absolute h-4 lg:h-6 xl:h-7 2xl:h-8 top-8 left-8 md:top-0 lg:-top-3 xl:-top-4 lg:left-4 xl:left-24 2xl:left-32"
+      src="/images/memorias/line-shape-left.svg" alt="line shape">
+    <img
+      class="absolute h-4 lg:h-6 xl:h-7 2xl:h-8 top-8 right-8 md:top-0 lg:-top-3 xl:-top-4 lg:right-4 xl:right-24 2xl:right-32"
+      src="/images/memorias/line-shape-right.svg" alt="line shape">
+  </div> */}}
 </section>
 
 
