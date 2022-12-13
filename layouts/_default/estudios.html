@@ -1,0 +1,9 @@
+{{ define "main" }}
+<div class="bg-center bg-cover relative h-72 text-white flex items-center justify-center" style="background-image: url(/images/foto-candelaria.png);">
+  <h1 class="text-4xl lg:text-5xl font-nazare max-w-4xl text-center mx-auto" style="font-family: Nazare;">{{.Title}}</h1>
+</div>
+<div class="py-12 px-4 max-w-screen-xl mx-auto">
+  <div class="mt-12"><iframe src='{{ .Params.report | absURL }}' frameborder="0" class="w-full" height="800"></iframe></div>
+  <div class="mt-12"><iframe src='{{ .Params.slides | absURL }}' frameborder="0" class="w-full" height="800"></iframe></div>
+</div>
+{{ end }}

@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 module.exports = {
   purge: {
     enabled: process.env.HUGO_ENVIRONMENT === 'production',
@@ -28,6 +29,14 @@ module.exports = {
         'pink-dark': '#B52471',
         'lemon': '#D7DB2E',
         'lemon-dark': '#B2B511',
+        'cultured': '#ECECEC',
+        'gainsboro': '#D8D8D8',
+        'blue-ncs': '#2589BD',
+      },
+      inset: {
+        '2/5': '40%',
+        '5/12': '45%',
+        '3/5': '60%',
       },
     },
   },

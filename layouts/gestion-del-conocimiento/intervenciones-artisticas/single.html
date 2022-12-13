@@ -1,0 +1,90 @@
+{{ define "main" }}
+{{/* Banner */}}
+<section class="flex flex-col md:flex-row relative">
+  <div class="h-96 md:h-auto lg:w-1/2 bg-cover bg-center" style="background-image: url({{.Params.image}});">
+  </div>
+  <div class="w-11/12 lg:w-1/2 mx-auto">
+    <div class="w-11/12 lg:w-2/3 mx-auto py-16 space-y-6">
+      <h2 class="text-4xl md:text-5xl font-bold" style="font-family: Nazare;">
+        {{ .Title}}
+      </h2>
+
+      <div class="space-y-2">
+        <p>
+          <span class="font-bold tk-ibm-plex-mono">Tallerista: <span><span class="font-normal">{{
+                .Params.workshop }}</span>
+        </p>
+        <p>
+          <span class="font-normal">{{
+            .Params.date_label }}</span>
+        </p>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="text-white bg-pink px-1.5 py-0.5  absolute top-10 left-5/12" style="font-family: Nazare;">
+    Intervenciones artísticas </div>
+</section>
+{{ if .Description }}
+<section class="mx-auto w-11/12 mt-8 lg:mt-16">
+
+  <div class="relative w-11/12 lg:w-8/12 xl:w-7/12 2xl:w-6/12 mx-auto">
+    <p class="text-xl">{{ .Description }}</p>
+    <img class="absolute -top-2 -left-36 hidden lg:block" src="/images/sticky-blue.svg" alt="sticky">
+  </div>
+
+</section>
+{{ end }}
+
+<section class="py-16 max-w-screen-xl space-y-8 mx-auto">
+  <div class="w-11/12 lg:w-10/12 mx-auto space-y-4">
+    <h2 class="text-4xl font-bold">¿Cómo lo hicimos?</h2>
+    <p class="lg:text-xl mb-4">{{ .Params.what }}</p>
+    {{ if .Params.whatDB }}
+    <a href="{{ .Params.whatDB }}" class="text-blue-ncs underline my-4 lg:text-xl" target="_blank">Base de datos que
+      se utilizó</a>
+    {{ end }}
+  </div>
+  <div class="w-11/12 lg:w-10/12 mx-auto space-y-4">
+    <h2 class="text-4xl font-bold">¿Qué hicimos?</h2>
+    <p class="lg:text-xl mb-4">{{ .Params.weDid }}</p>
+    {{ if .Params.weDidTool }}
+    <a href="{{ .Params.weDidTool }}" class="text-blue-ncs underline my-4 lg:text-xl" target="_blank">La herramienta
+      que se usó fue la app de nube de palabras Datasketch. Se publicó en vivo y en directo por las redes
+      sociales de Datasketch.
+    </a>
+    {{ end }}
+  </div>
+</section>
+
+<section class="py-12 lg:py-16 xl:py-20">
+  <div class="mx-auto w-10/12">
+    <div class="mx-auto">
+      <div class="slider-wrapper swiper-inter mt-8">
+        <div class="swiper overflow-hidden relative mb-4"
+          style="--swiper-navigation-color: #000; --swiper-pagination-color: #000">
+          <div class="swiper-wrapper">
+            {{ range .Params.images }}
+            <div class="swiper-slide">
+              <img class="w-auto mx-auto" style="height: 500px; max-width: 85%;" src="{{ . | absURL }}" alt="">
+            </div>
+            {{ end }}
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+{{ end }}
+
+{{ define "js" }}
+{{ $swipers := resources.Get "js/swipers.js" | js.Build (dict "minify" true) }}
+<script src="{{ $swipers.Permalink }}"></script>
+{{ end }}
+{{/* | js.Build (dict "minify" true) */}}

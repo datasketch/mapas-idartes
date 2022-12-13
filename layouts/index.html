@@ -1,7 +1,11 @@
 {{ define "main" }}
 {{/* BANNER HOME END */}}
-<div class="bg-center bg-cover relative observer" style="height: 635px; background-image: url(/images/foto-candelaria.png);">
-    <div class="mx-auto w-10/12">
+<div class="bg-center bg-cover relative h-72 observer" style="background-image: url(/images/foto-candelaria.png);">
+  <div class="text-white flex  justify-center items-center h-full">
+    <p class="text-2xl lg:text-3xl font-nazare max-w-4xl text-center" style="font-family: Nazare;">La Línea
+      Estratégica de Sostenibilidad del Ecosistema Artístico del Idartes</p>
+  </div>
+  <!--  <div class="mx-auto w-10/12">
         <div class="absolute transform -translate-y-3/4 top-1/2 w-full">
             <div
                 class="text-white text-lg md:text-xl lg:text-2xl xl:text-3xl border-b border-white pb-2 mb-3 w-10/12 lg:w-8/12 xl:w-7/12">
@@ -13,177 +17,284 @@
             <p class="font-bold italic text-white mb-4">Inscripción previa</p>
             <a class="tk-moby font-bold text-xs py-3 px-4" href="#" style="background-color: #D4E04E;">Inscribirme</a>
         </div>
-    </div>
+    </div> -->
 </div>
 {{/* BANNER HOME END */}}
 
+<section class="my-8 lg:my-16 w-11/12  max-w-screen-md space-y-3.5 lg:space-y-8 mx-auto tk-ibm-plex lg:text-lg">
+  <p>
+    La Línea Estratégica de Sostenibilidad del Ecosistema Artístico del Idartes promueve el trabajo en red como
+    herramienta
+    de fomento, la articulación, el emprendimiento integral, la formación, la innovación, la circulación y la
+    reactivación y
+    estabilización de los agentes artísticos de Bogotá, garantizando su sostenibilidad económica, social, política,
+    ambiental y cultural.
+  </p>
+  <p>
+    De este modo, la Línea articula cuatro componentes del ecosistema artístico y cultural: formación, articulación,
+    circulación y gestión del conocimiento. Dichos componentes se interrelacionan alrededor de la búsqueda de la
+    sostenibilidad, entendida de manera integral o amplia. No solo como dimensiones graduales de la sostenibilidad,
+    sino
+    como campos en interrelación. Por ejemplo, las relaciones entre formación y articulación a través del
+    aprendizaje
+    horizontal y la cocreación. La gestión del conocimiento y la formación en construcción de información para el
+    fortalecimiento de colectivos y organizaciones culturales. La circulación y la articulación en mercados y ruedas
+    de
+    negocios.
+  </p>
+  <p>
+    Esto implica, entre otras cosas, que el proyecto de sostenibilidad abre diálogos con muchos sectores (públicos
+    y/o
+    privados) alrededor de los agentes del ecosistema artístico y cultural, los cuales no siempre se limitan al
+    campo de las
+    artes y la cultura.
+  </p>
+</section>
+
+<section>
+  <div class="flex flex-col lg:flex-row">
+    <div class="bg-center bg-cover h-96 lg:h-auto w-full lg:w-2/5"
+      style="background-image: url(/images/home/laboratorios_en_red_cinemateca.jpg);">
+    </div>
+    <div class="w-10/12 mx-auto lg:w-3/5">
+      <div class="lg:w-2/3 mx-auto py-16 space-y-3">
+        <h2 class="bg-lemon text-3xl px-6 py-3 tk-moby">Articulación</h2>
+        <p class="lg:text-lg xl:text-xl tk-ibm-plex">
+          Busca suscitar y fomentar las conexiones adecuadas, efectivas y acertadas para el desarrollo de
+          territorios artísticos y
+          culturales a través del fomento en red, fortalecimiento organizativo y trabajo colaborativo en el
+          ecosistema artístico
+          para la sostenibilidad. Se ha realizado a través de:
+
+        </p>
+        <ul class="mx-6 space-y-2 lg:text-lg xl:text-xl tk-ibm-plex list-item"
+          style="list-style-image: url('/images/list-lemon.svg');">
+          <li class="cursor-pointer" id="tippy-1">Creative and Cultural Enterprise - Laboratorios en Red en alianza con
+            el British
+            Council</li>
+          <li class="cursor-pointer" id="tippy-2">Red de Espacios Independientes - REI</li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="absolute right-0" style="bottom: -7.3rem; z-index: -10;">
+      <img src="/images/home/star.svg" />
+    </div>
+  </div>
+  <div class="bg-cultured flex flex-col lg:flex-row">
+    <div class="w-10/12 mx-auto lg:w-3/5">
+      <div class="lg:w-2/3 mx-auto py-16 space-y-3">
+        <h2 class="bg-pink text-white text-3xl px-6 py-3 tk-moby">Circulación y Comercialización</h2>
+        <p class="lg:text-lg xl:text-xl tk-ibm-plex">Implementa estrategias para la reactivación,
+          estabilización, descentralización y diversificación de
+          las prácticas
+          artísticas y culturales a través de circuitos locales, nocturnos, comunitarios, espacios
+          multifuncionales, equipamientos
+          culturales, festivales distritales del ecosistema artístico y actividades en el espacio público.</p>
+        <ul class="mx-6 lg:text-lg xl:text-xl tk-ibm-plex list-item"
+          style="list-style-image: url('/images/list-pink.svg');">
+          <li class="cursor-pointer" id="tippy-3">Corredores artísticos para la reactivación</li>
+          <li class="cursor-pointer" id="tippy-4">Zonas de Arte y Emprendimiento</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bg-center h-96 lg:h-auto w-full lg:w-2/5"
+      style="background-image: url(/images/home/corredores_artisticos.jpg);">
+    </div>
+  </div>
+  <div class="flex flex-col lg:flex-row">
+    <div class="bg-center bg-cover h-96 lg:h-auto w-full lg:w-2/5"
+      style="background-image: url(/images/home/idartes-artifice.jpg);">
+    </div>
+    <div class="w-10/12 mx-auto lg:w-3/5">
+      <div class="lg:w-2/3 mx-auto py-12 space-y-3">
+        <h2 class="bg-lemon text-3xl px-6 py-3 tk-moby">Formación</h2>
+        <p class="lg:text-lg xl:text-xl tk-ibm-plex">Trabaja alrededor de la cualificación de los agentes del
+          ecosistema artístico a través de
+          metodologías contextuales, aprender haciendo, sistemas de información y herramientas digitales para
+          el cierre de brechas
+          sociales, la sostenibilidad multidimensional y la innovación social.</p>
+        <ul class="mx-6 lg:text-lg xl:text-xl tk-ibm-plex list-item"
+          style="list-style-image: url('/images/list-lemon.svg');">
+          <li class="cursor-pointer" id="tippy-5">La Semilla</li>
+          <li class="cursor-pointer" id="tippy-6">Artifices</li>
+          <li class="cursor-pointer" id="tippy-7">Emprende con el Arte (<a href="https://www.emprendeconelarte.com/"
+              class="underline text-blue-ncs" target="_blank">Sitio web</a>)</li>
+          <li class="cursor-pointer" id="tippy-8">Ruta de aprendizaje</li>
+          <li class="cursor-pointer" id="tippy-9">Escuela Arte a la KY</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="bg-cultured flex flex-col lg:flex-row">
+    <div class="w-10/12 mx-auto lg:w-3/5">
+      <div class="lg:w-2/3 mx-auto py-16 space-y-3 ">
+        <h2 class="bg-blue text-white text-3xl px-6 py-3 tk-moby">Gestión del conocimiento y comunidad</h2>
+        <p class="lg:text-lg xl:text-xl tk-ibm-plex">Busca identificar, diagnosticar y caracterizar las
+          dinámicas del ecosistema artístico a través de la apropiación y gestión social del conocimiento, las
+          pedagogías de los datos y los laboratorios colaborativos para
+          construir prácticas sostenibles, redes colaborativas, autonomía en la información, mapeo de agentes,
+          circuitos locales y entornos comunitarios.</p>
+        <ul class="mx-6 lg:text-lg xl:text-xl tk-ibm-plex list-item"
+          style="list-style-image: url('/images/list-pink.svg');">
+          <li class="cursor-pointer" id="tippy-10"> Mapas: rutas colaborativas y sostenibilidad</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bg-center bg-cover h-96 lg:h-auto w-full lg:w-2/5"
+      style="background-image: url(/images/home/mapas.jpg);">
+    </div>
+  </div>
+</section>
+
+
 {{/* ¿QUE ES MAPAS? */}}
 <section class="pt-16 pb-32 lg:pt-20 lg:pb-46 xl:pt-24 xl:pb-40 relative">
-    <div class="mx-auto w-10/12 lg:w-full">
-        <div class="grid grid-cols-1 lg:grid-cols-12 items-center gap-y-16">
-            <div class="lg:col-start-2 lg:col-end-8">
-                <h2 class="tk-moby text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-2 lg:mb-3 xl:mb-4">
-                    ¿Qué es <span class="block uppercase">mapas?</span>
-                </h2>
-                <p class="lg:text-lg xl:text-xl mb-4 lg:mb-6 xl:mb-8">
-                    El proyecto MAPAS, liderado por la <a class="font-bold" target="_blank" href="https://www.idartes.gov.co/es/lineas-estrategicas/sostenibilidad-ecosistema-artistico">Línea de Sostenibilidad del Ecosistema Artístico</a> del Idartes,
-                    busca promover el trabajo colaborativo y la construcción de redes entre artistas, organizaciones, colectivos y en general entre todas las personas que hacen posibles las prácticas artísticas en Bogotá desde diferentes roles y oficios. Lo anterior, por medio de una serie de estrategias de relacionamiento y habitabilidad digital.
-                </p>
-                <a class="tk-moby font-bold text-sm py-3 px-4 bg-black text-lemon" href='{{ relref . "metodologia/que-es-mapas.md" }}'>Conoce más</a>
-            </div>
-            <div class="lg:col-start-9 lg:col-end-13">
-                <p class="tk-moby-monospaced text-white bg-gradient-to-r from-blue to-blue-dark py-3 pl-4 rounded-l-xl mb-6 uppercase">
-                    Innovación
-                </p>
-                <p class="tk-moby-monospaced text-white  bg-gradient-to-r from-pink to-pink-dark py-3 pl-4 rounded-l-xl mb-6 uppercase">
-                    Sostenibilidad
-                </p>
-                <p class="tk-moby-monospaced text-white  bg-gradient-to-r from-lemon to-lemon-dark py-3 pl-4 rounded-l-xl uppercase">
-                    Rutas <br> colaborativas
-                </p>
-            </div>
-        </div>
+  <div class="mx-auto w-10/12 lg:w-full">
+    <div class="grid grid-cols-1 lg:grid-cols-12 items-center gap-y-16">
+      <div class="lg:col-start-2 lg:col-end-8">
+        <h2 class="tk-moby text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-2 lg:mb-3 xl:mb-4">
+          ¿Qué es <span class="block uppercase">mapas?</span>
+        </h2>
+        <p class="lg:text-lg xl:text-xl mb-4 lg:mb-6 xl:mb-8">
+          El proyecto MAPAS, liderado por la <a class="font-bold" target="_blank"
+            href="https://www.idartes.gov.co/es/lineas-estrategicas/sostenibilidad-ecosistema-artistico">Línea
+            de Sostenibilidad del Ecosistema Artístico</a> del Idartes,
+          busca promover el trabajo colaborativo y la construcción de redes entre artistas, organizaciones,
+          colectivos y en general entre todas las personas que hacen posibles las prácticas artísticas en
+          Bogotá desde diferentes roles y oficios. Lo anterior, por medio de una serie de estrategias de
+          relacionamiento y habitabilidad digital.
+        </p>
+
+      </div>
+      <div class="lg:col-start-9 lg:col-end-13">
+        <p
+          class="tk-moby-monospaced text-white bg-gradient-to-r from-blue to-blue-dark py-3 pl-4 rounded-l-xl mb-6 uppercase">
+          Innovación
+        </p>
+        <p
+          class="tk-moby-monospaced text-white  bg-gradient-to-r from-pink to-pink-dark py-3 pl-4 rounded-l-xl mb-6 uppercase">
+          Sostenibilidad
+        </p>
+        <p
+          class="tk-moby-monospaced text-white  bg-gradient-to-r from-lemon to-lemon-dark py-3 pl-4 rounded-l-xl uppercase">
+          Rutas <br> colaborativas
+        </p>
+      </div>
     </div>
-    <img class="absolute -top-32 left-2 md:left-4 lg:left-8 xl:left-16 z-10" src="/images/home/line-stair.svg"
-        alt="stair line">
+  </div>
+  <img class="absolute -top-12 left-2 md:left-4 lg:left-8 xl:left-16 z-10" src="/images/home/line-stair.svg"
+    alt="stair line">
 </section>
 {{/* ¿QUE ES MAPAS? END */}}
 
 {{/* PROGRAMAS SOSTENIBILIDAD */}}
 <section class="pb-16 pt-32 lg:pb-20 lg:pt-46 xl:pb-24 xl:pt-40 relative" style="background-color: #D8D8D8;">
-    <h2
-        class="tk-moby text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-2 lg:mb-3 xl:mb-4 bg-white inline-block absolute -top-10 left-14 lg:left-28 py-3 pl-2 pr-8">
-        Programas <span class="block">Sostenibilidad</span>
-    </h2>
-    <div class="mx-auto w-8/12 lg:w-9/12 xl:w-8/12 relative">
-        {{ partial "programas.html" . }}
-    </div>
+  <h2
+    class="tk-moby text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-2 lg:mb-3 xl:mb-4 bg-white inline-block absolute -top-10 left-14 lg:left-28 py-3 pl-2 pr-8">
+    Programas <span class="block">Sostenibilidad</span>
+  </h2>
+  <div class="mx-auto lg:w-10/12 xl:w-8/12 ">
+    {{ partial "programas.html" . }}
+  </div>
+
 </section>
 {{/* PROGRAMAS SOSTENIBILIDAD END */}}
 
 {{/* BUENAS PRACTICAS */}}
 <section class="relative">
-    <h2 class="tk-moby text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-2 lg:mb-3 xl:mb-4 inline-block absolute -top-5 left-14 lg:left-28 py-3 px-2"
-        style="background-color: #D8D8D8;">
-        Buenas <span class="block">Prácticas</span>
-    </h2>
-    <div
-        class="grid grid-cols-1 lg:grid-cols-12 items-center gap-y-16 mx-auto pb-12 pt-24 lg:pt-40 lg:pb-24 xl:pt-52 w-10/12 lg:w-full relative">
-        <div class="lg:col-start-2 lg:col-end-7">
-            <h2 class="tk-moby text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-2 lg:mb-3 xl:mb-4">
-                Formación <br> Gestores <br> culturales
-            </h2>
-            <p class="lg:text-lg">
-                Formación de gestores culturales desde la apropiación local del arte. Trabajan con todas las localidades y es una estrategia enfocada en fortalecer las prácticas comunitarias con acompañamiento personalizado para orientar la formulación de propuestas financiables.
-            </p>
-        </div>
-        <img class="lg:col-start-8 lg:col-end-12 mx-auto" src="/images/home/icono-formacion.svg" alt="icono formacion">
-        <img class="absolute top-20 lg:top-36 xl:top-52 -left-4 lg:left-16 xl:left-20 2xl:left-28 z-10" src="/images/home/good-practics-line-left.svg" alt="good practics">
-        <img class="absolute -top-20 lg:-top-20 xl:-top-16 2xl:-top-20 -right-8 md:-right-10 lg:right-6 xl:right-16 2xl:right-32 z-10" src="/images/home/good-practics-line-right.svg" alt="good practics">
+  <h2
+    class="tk-moby text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-2 lg:mb-3 xl:mb-4 inline-block absolute -top-5 left-14 lg:left-28 py-3 px-2"
+    style="background-color: #D8D8D8;">
+    Buenas <span class="block">Prácticas</span>
+  </h2>
+  <div
+    class="grid grid-cols-1 lg:grid-cols-12 items-center gap-y-16 mx-auto pb-12 pt-24 lg:pt-40 lg:pb-24 xl:pt-52 w-10/12 lg:w-full relative">
+    <div class="lg:col-start-2 lg:col-end-7">
+      <h2 class="tk-moby text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-2 lg:mb-3 xl:mb-4">
+        Formación <br> Gestores <br> culturales
+      </h2>
+      <p class="lg:text-lg">
+        Formación de gestores culturales desde la apropiación local del arte. Trabajan con todas las localidades
+        y es una estrategia enfocada en fortalecer las prácticas comunitarias con acompañamiento personalizado
+        para orientar la formulación de propuestas financiables.
+      </p>
     </div>
-    <div class="py-12 lg:pt-24 lg:pb-16 xl:pt-32 xl:pb-20" style="background-color: #D8D8D87C;">
-        <div class="grid grid-cols-1 lg:grid-cols-12 items-center gap-y-16 mx-auto w-10/12 lg:w-full">
-            <img class="lg:col-start-2 lg:col-end-6 mx-auto" src="/images/home/capacitaciones.svg" alt="icono formacion">
-            <div class="lg:col-start-7 lg:col-end-12">
-                <h2 class="tk-moby text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-2 lg:mb-3 xl:mb-4">
-                    Capacitaciones
-                </h2>
-                <p class="lg:text-lg lg:w-10/12">
-                    Los procesos de aprendizaje deben ser continuos y constantes para poder adaptarse a los cambios que se van dando en el mundo y aplicarlos al Ecosistema Artístico y cultural. por eso dentro de la estrategia, se incluyeron algunos espacios de capacitación sobre temas como: tecnología blockchain, NFTs, Wikis y Wikipedia, Geoclick y Sistemas de Información geográfica.
-                </p>
-            </div>
-        </div>
+    <img class="lg:col-start-8 lg:col-end-12 mx-auto" src="/images/home/icono-formacion.svg" alt="icono formacion">
+    <img class="absolute top-20 lg:top-36 xl:top-52 -left-4 lg:left-16 xl:left-20 2xl:left-28 z-10"
+      src="/images/home/good-practics-line-left.svg" alt="good practics">
+    <img
+      class="absolute -top-20 lg:-top-20 xl:-top-16 2xl:-top-20 -right-8 md:-right-10 lg:right-6 xl:right-16 2xl:right-32 z-10"
+      src="/images/home/good-practics-line-right.svg" alt="good practics">
+  </div>
+  <div class="py-12 lg:pt-24 lg:pb-16 xl:pt-32 xl:pb-20" style="background-color: #D8D8D87C;">
+    <div class="grid grid-cols-1 lg:grid-cols-12 items-center gap-y-16 mx-auto w-10/12 lg:w-full">
+      <img class="lg:col-start-2 lg:col-end-6 mx-auto" src="/images/home/capacitaciones.svg" alt="icono formacion">
+      <div class="lg:col-start-7 lg:col-end-12">
+        <h2 class="tk-moby text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-2 lg:mb-3 xl:mb-4">
+          Capacitaciones
+        </h2>
+        <p class="lg:text-lg lg:w-10/12">
+          Los procesos de aprendizaje deben ser continuos y constantes para poder adaptarse a los cambios que
+          se van dando en el mundo y aplicarlos al Ecosistema Artístico y cultural. por eso dentro de la
+          estrategia, se incluyeron algunos espacios de capacitación sobre temas como: tecnología blockchain,
+          NFTs, Wikis y Wikipedia, Geoclick y Sistemas de Información geográfica.
+        </p>
+      </div>
     </div>
-    <div
-        class="grid grid-cols-1 lg:grid-cols-12 items-center gap-y-16 mx-auto w-10/12 lg:w-full py-12 lg:pt-24 lg:pb-16 xl:pt-32 xl:pb-20 relative">
-        <div class="lg:col-start-2 lg:col-end-7">
-            <h2 class="tk-moby text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-2 lg:mb-3 xl:mb-4">
-                Emprendimientos
-            </h2>
-            <p class="lg:text-lg">
-                Emprendimientos locales, entre los que se encuentra el sector editorial, accesorios, obras de arte, tejidos, productos musicales y artesanales, entre otros, presentan una completa oferta de productos y servicios.
-            </p>
-        </div>
-        <img class="lg:col-start-8 lg:col-end-12 mx-auto" src="/images/home/emprendimientos.svg" alt="icono formacion">
-        <img class="absolute -top-60 lg:-top-68 xl:-top-72 -right-8 md:-right-10 lg:right-6 xl:right-16 2xl:right-32 z-10" src="/images/home/good-practics-line-right.svg" alt="good practics">
+  </div>
+  <div
+    class="grid grid-cols-1 lg:grid-cols-12 items-center gap-y-16 mx-auto w-10/12 lg:w-full py-12 lg:pt-24 lg:pb-16 xl:pt-32 xl:pb-20 relative">
+    <div class="lg:col-start-2 lg:col-end-7">
+      <h2 class="tk-moby text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-2 lg:mb-3 xl:mb-4">
+        Emprendimientos
+      </h2>
+      <p class="lg:text-lg">
+        Emprendimientos locales, entre los que se encuentra el sector editorial, accesorios, obras de arte,
+        tejidos, productos musicales y artesanales, entre otros, presentan una completa oferta de productos y
+        servicios.
+      </p>
     </div>
+    <img class="lg:col-start-8 lg:col-end-12 mx-auto" src="/images/home/emprendimientos.svg" alt="icono formacion">
+    <img class="absolute -top-60 lg:-top-68 xl:-top-72 -right-8 md:-right-10 lg:right-6 xl:right-16 2xl:right-32 z-10"
+      src="/images/home/good-practics-line-right.svg" alt="good practics">
+  </div>
 </section>
 {{/* BUENAS PRACTICAS END */}}
 
-{{/* AGENDA CULTURAL */}}
-<section class="bg-cover bg-center py-24 lg:py-44 xl:py-52 relative" style="background-image: url(/images/agenda-cultural.png);">
-    <h2 class="tk-moby text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-2 lg:mb-3 xl:mb-4 inline-block absolute -top-10 left-14 lg:left-28 py-3 px-2"
-        style="background-color: #D8D8D8;">
-        Agenda <span class="block">Cultural</span>
-    </h2>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-28 gap-y-16 mx-auto w-10/12 text-white pb-12 lg:pb-16 xl:pb-20">
-        <h4 class="tk-moby font-bold text-lg md:text-xl lg:text-2xl xl:text-3xl text-center self-center">Octubre</h4>
-        <ul class="lg:text-lg xl:text-xl">
-            <li class="mb-4"><span class="font-bold">21</span> Festival de teatro</li>
-            <li class="mb-4"><span class="font-bold">24</span> ARTBO</li>
-            <li><span class="font-bold">31</span> Festival de tamboras</li>
-        </ul>
-        <ul class="lg:text-lg xl:text-xl">
-            <li><span class="font-bold">31</span> Festival música andina</li>
-        </ul>
-    </div>
-    <div
-        class="grid grid-cols-1 lg:grid-cols-3 gap-x-28 gap-y-16 border-t-2 border-b-2 border-lemon mx-auto w-10/12 text-white py-12 lg:py-16 xl:py-20">
-        <h4 class="tk-moby font-bold text-lg md:text-xl lg:text-2xl xl:text-3xl text-center self-center">Noviembre</h4>
-        <ul class="lg:text-lg xl:text-xl">
-            <li class="mb-4"><span class="font-bold">02</span> Encuentro arte urbano</li>
-            <li class="mb-4"><span class="font-bold">15</span> ARTBO</li>
-            <li><span class="font-bold">26</span> Festival de tamboras</li>
-        </ul>
-        <ul class="lg:text-lg xl:text-xl">
-            <li class="mb-4"><span class="font-bold">29</span> Encuentro con autor</li>
-            <li><span class="font-bold">30</span> Arte a la KY</li>
-        </ul>
-    </div>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-28 gap-y-16 mx-auto w-10/12 text-white pt-12 lg:pt-16 xl:pt-20">
-        <h4 class="tk-moby font-bold text-lg md:text-xl lg:text-2xl xl:text-3xl text-center self-center">Diciembre</h4>
-        <ul class="lg:text-lg xl:text-xl">
-            <li class="mb-4"><span class="font-bold">01</span> Festival de teatro</li>
-            <li class="mb-4"><span class="font-bold">10</span> ARTBO</li>
-            <li class="mb-4"><span class="font-bold">13</span> Ballet Nacional</li>
-            <li><span class="font-bold">22</span> Wikiton</li>
-        </ul>
-        <ul class="lg:text-lg xl:text-xl">
-            <li class="mb-4"><span class="font-bold">23</span> Encuentro Artistas Urbanos</li>
-            <li><span class="font-bold">23</span> Encuentro Danza Contemporánea</li>
-        </ul>
-    </div>
-</section>
-{{/* AGENDA CULTURAL END */}}
+
 
 {{/* BASES DE DATOS */}}
-<section class="py-24 lg:py-32 xl:py-40 relative">
-    <div
-        class="grid grid-cols-1 lg:grid-cols-12 items-center border-2 border-black py-10 px-6 mx-auto w-10/12 relative">
-        <h3 class="tk-moby text-blue text-2xl md:text-3xl lg:text-4xl xl:text-5xl lg:col-start-1 lg:col-end-5">
-            Bases <br> de datos
-        </h3>
-        <p class="lg:text-lg xl:text-xl lg:col-start-6 lg:col-end-11">
-            <span class="uppercase text-blue font-bold">GEOCLICK</span>
-            es la herramienta para acceder a los datos del ecosistema artístico y cultural de Bogotá.
-        </p>
-        <a class="tk-moby font-bold italic text-xs sm:text-sm py-3 px-10 bg-black text-lemon absolute -bottom-6 left-1/2 transform -translate-x-1/2" href="https://www.arcgis.com/apps/webappviewer/index.html?id=bad12857d5ba471ba506973fc3f35e67" target="_blank">
-            Explorar datos
-        </a>
-        <img class="h-12 md:h-16 absolute -bottom-4 -left-6" src="/images/home/elipse.svg" alt="elipse">
-        <img class="h-12 md:h-16 absolute -bottom-8 -right-32" src="/images/home/sticky-lemon.svg" alt="sticky">
-    </div>
-    <img class="absolute left-1/2 transform -translate-x-1/2 top-3 md:top-8 lg:top-12" src="/images/home/three-points.svg" alt="three points">
-    <img class="absolute -top-20 lg:-top-24 xl:-top-28 left-0 h-40 lg:h-48 xl:h-56" src="/images/home/purple-stair.svg" alt="purple stair">
-</section>
+{{/* <section class="py-24 lg:py-32 xl:py-40 relative">
+  <div class="grid grid-cols-1 lg:grid-cols-12 items-center border-2 border-black py-10 px-6 mx-auto w-10/12 relative">
+    <h3 class="tk-moby text-blue text-2xl md:text-3xl lg:text-4xl xl:text-5xl lg:col-start-1 lg:col-end-5">
+      Bases <br> de datos
+    </h3>
+    <p class="lg:text-lg xl:text-xl lg:col-start-6 lg:col-end-11">
+      <span class="uppercase text-blue font-bold">GEOCLICK</span>
+      es la herramienta para acceder a los datos del ecosistema artístico y cultural de Bogotá.
+    </p>
+    <a class="tk-moby font-bold italic text-xs sm:text-sm py-3 px-10 bg-black text-lemon absolute -bottom-6 left-1/2 transform -translate-x-1/2"
+      href="https://www.arcgis.com/apps/webappviewer/index.html?id=bad12857d5ba471ba506973fc3f35e67" target="_blank">
+      Explorar datos
+    </a>
+    <img class="h-12 md:h-16 absolute -bottom-4 -left-6" src="/images/home/elipse.svg" alt="elipse">
+    <img class="h-12 md:h-16 absolute -bottom-8 -right-32" src="/images/home/sticky-lemon.svg" alt="sticky">
+  </div>
+  <img class="absolute left-1/2 transform -translate-x-1/2 top-3 md:top-8 lg:top-12" src="/images/home/three-points.svg"
+    alt="three points">
+  <img class="absolute -top-20 lg:-top-24 xl:-top-28 left-0 h-40 lg:h-48 xl:h-56" src="/images/home/purple-stair.svg"
+    alt="purple stair">
+</section> */}}
 {{/* BASES DE DATOS END */}}
 {{ end }}
 
-{{ define "head" }}
-    <link rel="stylesheet" href="https://unpkg.com/swiper@6.7.0/swiper-bundle.min.css" />
-{{ end }}
-
+{{/*
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script> */}}
 {{ define "js" }}
-    {{ $home := resources.Get "js/home.js" | js.Build (dict "minify" true) }}
-    <script src="{{ $home.Permalink }}"></script>
+{{ $home := resources.Get "js/home.js" | js.Build (dict "minify" true) }}
+<script src="{{ $home.Permalink }}"></script>
+{{ $popovers := resources.Get "js/popovers.js" | js.Build (dict "minify" true) }}
+<script src="{{ $popovers.Permalink }}"></script>
 {{ end }}

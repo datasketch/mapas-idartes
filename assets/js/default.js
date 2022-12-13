@@ -1,4 +1,6 @@
+/* eslint-disable linebreak-style */
 'use strict';
+
 
 // ELEMENTS
 const navMobile = document.querySelector('.nav');
@@ -53,3 +55,5 @@ window.addEventListener('keydown', (e) => {
 btnUp.addEventListener('click', () => {
   window.scrollTo({top: 0, behavior: 'smooth'});
 });
+
+

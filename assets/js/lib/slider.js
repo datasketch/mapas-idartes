@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import SwiperCore, {
   Navigation, Pagination, Swiper, Autoplay,
 } from 'swiper/core';
