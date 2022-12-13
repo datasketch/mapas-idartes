@@ -4,7 +4,7 @@ position: 3
 title: Sistemas de información y apropiación del conocimiento
 facilitator: Ana Milena Prada
 sessions: 2
-duration: 24horas
+duration: 4 horas
 start: 2022-09-21
 end: 2022-09-23
 Hour: 4:00 a 6:00 pm
