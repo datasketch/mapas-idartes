@@ -146,4 +146,3 @@ prevVideo?.addEventListener('click', () => {
   swiperVideos.slidePrev();
 });
 
-console.log('luis');

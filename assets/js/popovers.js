@@ -1,8 +1,6 @@
 const {default: tippy} = require('tippy.js');
 
 /* eslint-disable linebreak-style */
-console.log(document.querySelectorAll('#tippy'));
-
 const tippys = [
   {
     content: 'Estrategia para incentivar la creación de redes colaborativas, los cruces transdisciplinares e intersectoriales, así como incorporar procesos de innovación que promuevan la sostenibilidad del ecosistema artístico y cultural de Bogotá. Los laboratorios en red se enfocan en el fortalecimiento del ecosistema creativo en pro de la reactivación económica del sector de Bogotá, además de pensar el trabajo colaborativo y comunitario como una de las claves para expandir la innovación social. </div>    ',
