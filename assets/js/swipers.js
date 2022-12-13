@@ -15,7 +15,7 @@ const conf = {
   spaceBetween: 10,
   navigation: {
     prevEl: '.swiper-custom-prev',
-    nextEl: '.swiper-custom-next',
+    nextEl: nextButton,
   },
   loop: true,
   breakpoints: {
@@ -43,7 +43,7 @@ const conf2 = {
   spaceBetween: 10,
   navigation: {
     prevEl: '.swiper-custom-prev',
-    nextEl: '.swiper-custom-next',
+    nextEl: nextButton2,
   },
   loop: true,
   breakpoints: {
@@ -91,8 +91,8 @@ const swiperGaleria = new Swiper('.swiper-galeria', {
     prevEl: '.swiper-button-prev',
   },
 });
-const swiperInterWrapper= document.querySelector('.swiper-inter');
-const swiperInter = new Swiper(swiperInterWrapper.querySelector('.swiper'), {
+const swiperInterWrapper = document.querySelector('.swiper-inter');
+const swiperInter = new Swiper(swiperInterWrapper?.querySelector('.swiper'), {
   loop: true,
   autoPlay: true,
   navigation: {
