@@ -98,11 +98,7 @@
 </section>
 {{ end }}
 
-{{ define "head" }}
-    <link rel="stylesheet" href="https://unpkg.com/swiper@6.7.0/swiper-bundle.min.css" />
-{{ end }}
-
 {{ define "js" }}
-    {{ $home := resources.Get "js/home.js" | js.Build (dict "minify" true) }}
-    <script src="{{ $home.Permalink }}"></script>
+{{ $home := resources.Get "js/home.js" | js.Build (dict "minify" true) }}
+<script src="{{ $home.Permalink }}"></script>
 {{ end }}

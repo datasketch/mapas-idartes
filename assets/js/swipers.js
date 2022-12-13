@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-const {default: Swiper} = require('swiper');
+import Swiper from 'swiper/bundle';
 
 const nextButton = document.querySelector('.swiper-custom-next');
 const nextButton2 = document.querySelector('.swiper-custom-next2');
@@ -66,23 +66,26 @@ const conf2 = {
 const swiperEnlace = new Swiper('.swiper-enlaces', conf);
 const swiperDocumento = new Swiper('.swiper-documentos', conf2);
 
-const swiperVideos = new Swiper('.swiper-video',
-    {
+const swiperVideoWrapper = document.querySelector('.swiper-video');
+const swiperVideos = new Swiper(swiperVideoWrapper.querySelector('.swiper'), {
+  navigation: {
+    nextEl: nextVideo,
+    prevEl: prevVideo,
+  },
+  slidesPerView: 1,
+  breakpoints: {
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+  },
+});
 
-      navigation: {
-        nextEl: nextVideo,
-        prevEl: prevVideo,
-      },
-
-    });
-
-console.log('luis');
 const swiperGaleria = new Swiper('.swiper-galeria', {
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-
   },
 });
 

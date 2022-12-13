@@ -1,7 +1,7 @@
 ---
 tag: laboratorio 3
 position: 3
-title: Sistemas de información y apropiación del conocimiento 
+title: Sistemas de información y apropiación del conocimiento
 facilitator: Ana Milena Prada
 sessions: 2
 duration: 24horas
@@ -9,7 +9,7 @@ start: 2022-09-21
 end: 2022-09-23
 Hour: 4:00 a 6:00 pm
 days: Sep 21 Y 23 / 2022
-description: A través de entornos de confianza, equidad e inclusión se fomenta un espacio para hablar sobre gestión de información para públicos no expertos. Los participantes tuvieron la oportunidad de conocer diferentes plataformas web para visualizar y acceder a información pública y fortalecer la información propia, la autogestión, el conocimiento y la construcción de redes de trabajo a través de la experimentación artística. 
+description: A través de entornos de confianza, equidad e inclusión se fomenta un espacio para hablar sobre gestión de información para públicos no expertos. Los participantes tuvieron la oportunidad de conocer diferentes plataformas web para visualizar y acceder a información pública y fortalecer la información propia, la autogestión, el conocimiento y la construcción de redes de trabajo a través de la experimentación artística.
 type: gestion-del-conocimiento/laboratorios
 image: /images/laboratorios/lab-3.jpg
 
@@ -23,16 +23,16 @@ gallery:
         - /images/laboratorios/laboratorio_3/7.png
         - /images/laboratorios/laboratorio_3/8.png
         - /images/laboratorios/laboratorio_3/9.png
-        
-           
 
-videos: 
+
+
+videos:
        - https://player.vimeo.com/video/780199742
        - https://player.vimeo.com/video/780200358
        - https://player.vimeo.com/video/780352982
        - https://player.vimeo.com/video/780360957
 
-tools:  
+tools:
         - title: "ARE.NA"
           category: "Herramientas para la gestión del Conocimiento"
           link: "https://www.are.na/a-turgeon/systems-mapping"
@@ -70,9 +70,9 @@ tools:
           category: "Sistemas de información para análisis y visualización "
           link: "https://r-graph-gallery.com/bubble-chart.html"
 
-documents: 
+documents:
         - title: "IDARTES-SISTEMAS DE INFORMACION IDARTES"
           link:  "IDARTES-SISTEMAS DE INFORMACION IDARTES.pdf"
-       
-metodology: 
+
+metodology:
 ---

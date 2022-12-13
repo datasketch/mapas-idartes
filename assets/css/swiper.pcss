@@ -1,0 +1,71 @@
+@import "node_modules/swiper/swiper-bundle.min.css";
+
+.slider-wrapper {
+  @apply relative px-6;
+}
+
+.swiper-custom-prev {
+  @apply z-10 w-12 h-12 bg-black;
+}
+
+.swiper-custom-next,
+.swiper-custom-next2 {
+  @apply z-10 w-12 h-12 bg-black;
+}
+
+.swiper-custom-next,
+.swiper-custom-next2 {
+  background-image: url("/images/laboratorios/white-arrow.svg");
+  @apply bg-no-repeat bg-center
+}
+
+.swiper-custom-prev {
+  background-image: url("/images/laboratorios/white-arrow.svg");
+  @apply bg-no-repeat bg-center rotate-45
+}
+
+
+.slider-next,
+.slider-prev,
+.slider-video-next,
+.slider-video-prev {
+  @apply absolute top-1/2 transform -translate-y-1/2 w-10 h-10 bg-center bg-contain bg-no-repeat cursor-pointer;
+}
+
+.slider-next {
+  @apply -right-16 xl:-right-32 hidden lg:block;
+  width: 65px;
+  height: 65px;
+  background-image: url("/images/right-arrow.png");
+}
+
+.slider-prev {
+  @apply -left-16 xl:-left-32 hidden lg:block;
+  background-image: url("/images/left-arrow.png");
+  width: 65px;
+  height: 65px;
+}
+
+.slider-video-next {
+  @apply -right-16 xl:-right-32 hidden lg:block;
+  width: 65px;
+  height: 65px;
+  background-image: url("/images/right-arrow.png");
+}
+
+.slider-video-prev {
+  @apply -left-16 xl:-left-32 hidden lg:block;
+  background-image: url("/images/left-arrow.png");
+  width: 65px;
+  height: 65px;
+}
+
+.slider-prev.swiper-button-disabled,
+.slider-next.swiper-button-disabled,
+.swiper-custom-next.swiper-button-disabled {
+  @apply opacity-30 cursor-not-allowed;
+}
+
+.swiper-slide-active-thumb {
+  opacity: 1;
+}
