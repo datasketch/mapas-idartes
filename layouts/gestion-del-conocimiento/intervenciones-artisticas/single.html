@@ -84,7 +84,7 @@
 {{ end }}
 
 {{ define "js" }}
-{{ $swipers := resources.Get "js/swipers.js" }}
+{{ $swipers := resources.Get "js/swipers.js" | js.Build (dict "minify" true) }}
 <script src="{{ $swipers.Permalink }}"></script>
 {{ end }}
 {{/* | js.Build (dict "minify" true) */}}
