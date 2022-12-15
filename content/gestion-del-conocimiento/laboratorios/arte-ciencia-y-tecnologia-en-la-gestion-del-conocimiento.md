@@ -60,4 +60,8 @@ tools:
         - title: Nun June Paid
           link: https://es.wikipedia.org/wiki/Nam_June_Paik
 
+documents:
+        - title: "Presentación arte ciencia & tecnología para la gestión del conocimiento"
+          link: /docs/laboratorio-4/Presentación arte ciencia & tecnología para la gestión del conocimiento.pdf
+  
 ---

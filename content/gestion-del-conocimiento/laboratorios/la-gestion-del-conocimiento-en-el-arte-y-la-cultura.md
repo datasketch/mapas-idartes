@@ -61,9 +61,9 @@ tools:
 
 documents:
   - title: "Guia_Laboratorio_Gestion_del_conocimiento"
-    link: "Guia_Laboratorio_Gestion_del_conocimiento.pdf"
+    link: /docs/laboratorio-1/Guia_Laboratorio_Gestion_del_conocimiento.pdf
   - title: "Laboratorio_Gestion_del_Conocimiento"
-    link: "Laboratorio_Gestion_del_Conocimiento.pptx.pdf"
+    link: /docs/laboratorio-1/Laboratorio_Gestion_del_Conocimiento.pptx.pdf
 
 metodology:
 ---

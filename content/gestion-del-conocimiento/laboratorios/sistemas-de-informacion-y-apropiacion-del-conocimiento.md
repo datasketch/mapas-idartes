@@ -72,7 +72,7 @@ tools:
 
 documents:
         - title: "IDARTES-SISTEMAS DE INFORMACION IDARTES"
-          link:  "IDARTES-SISTEMAS DE INFORMACION IDARTES.pdf"
+          link:  /docs/laboratorio-3/IDARTES-SISTEMAS DE INFORMACION IDARTES.pdf
 
 metodology:
 ---

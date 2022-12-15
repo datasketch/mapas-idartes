@@ -48,15 +48,15 @@ tools:
 
 documents: 
         - title: "BogotaMapa_Meraki_2pliegos"
-          link:  "/docs/BogotaMapa_Meraki_2pliegos.pdf"
+          link:  /docs/laboratorio-2/BogotaMapa_Meraki_2pliegos.pdf
         - title: "Guia_LaboratorioMapas_JulianaBoh.docx"
-          link:  "Guia_LaboratorioMapas_JulianaBoh.docx.pdf"
+          link:  /docs/laboratorio-2/Guia_LaboratorioMapas_JulianaBoh.docx.pdf
         - title: "mapa_ganadores_(1)"
           link:  "mapa_ganadores_(1).html"
         - title: "Mapas_"
           link:  "Mapas_.docx"
         - title: "Presentación_Redes_Colaborativas_JulianaBoh"
-          link:  "Presentación_Redes_Colaborativas_JulianaBoh.pdf"
+          link:  /docs/laboratorio-2/Presentación_Redes_Colaborativas_JulianaBoh.pdf
 
 metodology: 
 ---

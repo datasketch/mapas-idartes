@@ -59,22 +59,24 @@
     <h2 class="text-3xl" style="font-family: Nazare;">Video documental</h2>
     <img class="transform -translate-x-5" src="/images/laboratorios/border-pink.svg" alt="">
   </div>
-  <div class="slider-wrapper swiper-video mt-8">
-    <div style="--swiper-navigation-color: #000; --swiper-pagination-color: #000"
-      class="swiper overflow-hidden relative mb-4">
-      <div class="swiper-wrapper">
-        {{ range .Params.videos }}
-        <div class="swiper-slide">
-          <div class="aspect-w-16 aspect-h-9">
-            <iframe src="{{.}}?h=c99206d621&byline=0&portrait=0" frameborder="0"
-              allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  <div class="w-10/12 mx-auto">
+    <div class="slider-wrapper swiper-video mt-8">
+      <div style="--swiper-navigation-color: #000; --swiper-pagination-color: #000"
+        class="swiper overflow-hidden relative mb-4">
+        <div class="swiper-wrapper">
+          {{ range .Params.videos }}
+          <div class="swiper-slide">
+            <div class="aspect-w-16 aspect-h-9">
+              <iframe src="{{.}}?h=c99206d621&byline=0&portrait=0" frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            </div>
           </div>
+          {{ end }}
         </div>
-        {{ end }}
       </div>
+      <div class="swiper-video-next slider-next"></div>
+      <div class="swiper-video-prev slider-prev"></div>
     </div>
-    <div class="swiper-video-next slider-next"></div>
-    <div class="swiper-video-prev slider-prev"></div>
   </div>
 </section>
 {{/* videos */}}

@@ -15,6 +15,6 @@ images:
     - /images/intervenciones/intervencion_2/4.jpg
     - /images/intervenciones/intervencion_2/5.jpg
     - /images/intervenciones/intervencion_2/6.jpg
-
+embedded: https://uploads.knightlab.com/storymapjs/1dc0d7c9f731e80a20601a4cc9b36262/redes-colaborativas-rei/index.html
 type: gestion-del-conocimiento/intervenciones-artisticas
 ---

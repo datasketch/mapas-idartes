@@ -17,6 +17,12 @@ images:
     - /images/intervenciones/intervencion_1/6.jpg
     - /images/intervenciones/intervencion_1/7.jpg
     - /images/intervenciones/intervencion_1/8.jpg
+    - /images/intervenciones/intervencion_1/conocimientoexplicito_ACTUAL.jpeg
+    - /images/intervenciones/intervencion_1/conocimientotacito_ACTUAL.jpeg
+    - /images/intervenciones/intervencion_1/transformaciones_ACTUAL.jpeg
+    - /images/intervenciones/intervencion_1/conocimientoTacito_IDEAL.jpeg
+    - /images/intervenciones/intervencion_1/conociminetoExplicito_IDEAL.jpeg
+    - /images/intervenciones/intervencion_1/transformaciones_IDEAL.jpeg
   
 type: gestion-del-conocimiento/intervenciones-artisticas
 ---
