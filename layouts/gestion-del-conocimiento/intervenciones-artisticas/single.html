@@ -50,19 +50,28 @@
     <h2 class="text-4xl font-bold">¿Qué hicimos?</h2>
     <p class="lg:text-xl mb-4">{{ .Params.weDid }}</p>
     {{ if .Params.weDidTool }}
-    <a href="{{ .Params.weDidTool }}" class="text-blue-ncs underline my-4 lg:text-xl" target="_blank">La herramienta
-      que se usó fue la app de nube de palabras Datasketch. Se publicó en vivo y en directo por las redes
+    <a href="{{ .Params.weDidTool }}" class="text-blue-ncs underline my-4 lg:text-xl" target="_blank">
+      La herramienta que se usó fue la app de nube de palabras Datasketch. Se publicó en vivo y en directo por las redes
       sociales de Datasketch.
     </a>
     {{ end }}
   </div>
 </section>
 
-{{/*  {{ if .Params.embedded }}
-<iframe
-  src="https://uploads.knightlab.com/storymapjs/1dc0d7c9f731e80a20601a4cc9b36262/redes-colaborativas-rei/index.html"
-  frameborder="0" class="w-full" style="height: 800px;"></iframe>
-{{ end }}  */}}
+{{ if .Params.embedded }}
+<div class="mt-12 md:w-10/12 mx-auto">
+  <iframe src="{{ .Params.embedded }}" frameborder="0" class="w-full " style="height: 938px;"></iframe>
+</div>
+{{ end }}
+
+{{ if .Params.video }}
+<section class="mt-12">
+  <div class="aspect-w-16 aspect-h-9">
+    <iframe src="{{.Params.video}}?h=c99206d621&byline=0&portrait=0" frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</section>
+{{ end }}
 
 <section class="py-12 lg:py-16 xl:py-20">
   <div class="mx-auto w-10/12">

@@ -125,12 +125,14 @@
               <div class="swiper-slide">
                 <div
                   class="flex justify-center items-center border-2 border-black bg-white p-3 max-w-xs max-h-36 relative h-full">
-                  <div class=" p-1.5 space-y-4">
+                  <div class="p-1.5 space-y-4">
                     <div class="p-3 tk-ibm-plex text-sm">
                       {{ if (eq .category "") }}
                       <span>{{ .title }}</span>
                       {{else}}
-                      <p class="truncate-four"><span class="text-blue">{{ .title }}</span>,{{ .category }}</p>
+                      <p class="truncate-four">
+                        <span class="text-blue">{{ .title }}</span>,
+                        {{ .category }}</p>
                       {{end}}
                     </div>
                     <div class="absolute flex justify-center" style="bottom: -15%; left: 30%;">

@@ -18,5 +18,7 @@ images:
     - /images/intervenciones/intervencion_4/7.png
     - /images/intervenciones/intervencion_4/8.png
 
+video: https://player.vimeo.com/video/780352370
+
 type: gestion-del-conocimiento/intervenciones-artisticas
 ---

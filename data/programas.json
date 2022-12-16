@@ -2,36 +2,43 @@
     {
         "title": "Corredores Artísticos para la Reactivación",
         "description": "Estrategia de reactivación con el objetivo de reanimar, vincular y fomentar las prácticas artísticas de los agentes del ecosistema artístico y cultural que han tenido impactos negativos y afectaciones ocasionadas por la pandemia del COVID-19.",
+        "image":"/images/programas_sostenibilidad/corredores_artisticos.jpg",
         "url": "https://idartesencasa.gov.co/sostenibilidad/corredores-artisticos"
     },
     {
         "title": "Laboratorios en red",
         "description": "Busca propiciar la co-creación e innovación colaborativa, contribuyendo a la sostenibilidad de las iniciativas y emprendimientos del ecosistema artístico.",
+        "image":"/images/programas_sostenibilidad/laboratorios_en_red.jpg",
         "url": "https://www.idartes.gov.co/es/lineas-estrategicas/sostenibilidad-ecosistema-artistico/laboratorios-en-red/conv-2021"
     },
     {
         "title": "Emprende con el arte",
         "description": "Es un espacio de formación que se realiza con el apoyo de la Secretaría Distrital de Desarrollo Económico – SDDE y la Universidad El Bosque-. Se busca impulsar el fortalecimiento de agentes y emprendedores del ecosistema artístico de la ciudad garantizando los enfoques sociales, étnicos y de género, para desarrollar habilidades digitales.",
+        "image":"/images/programas_sostenibilidad/emprende_con_el_arte.png",
         "url": "https://www.emprendeconelarte.com/"
     },
     {
         "title": "La Semilla",
         "description": "Es una estrategia dirigida a colectivos de campesinos, agrupaciones u organizaciones de víctimas, mujeres, jóvenes y diferentes sectores sociales y poblacionales de las localidades rurales de Bogotá – Región. Es resultado del trabajo conjunto de la [Línea de Arte y Memoria sin Fronteras](https://www.idartes.gov.co/es/lineas-estrategicas/arte-memoria-sin-fronteras) y la Línea de Sostenibilidad del Ecosistema Artístico del Idartes.",
+        "image":"/images/programas_sostenibilidad/semilla_sumapaz.jpg",
         "url": "https://www.idartes.gov.co/es/articulos/la-semilla-sostenibilidad-arte-y-memoria-rural-en-bogota"
     },
     {
         "title": "Arte a la KY",
         "description": "Es un programa que surge en el año 2020 como una respuesta del Idartes para atender al sector artístico de la ciudad en medio de la contingencia y fortalecer las acciones orientadas a los artistas del espacio público.",
+        "image":"/images/programas_sostenibilidad/arte_ky.jpg",
         "url": "https://www.idartes.gov.co/es/editorial/arte-la-ky-historias-que-se-cruzan-y-se-viven-en-las-calles"
     },
     {
         "title": "Fomento en red",
         "description": "Es una metodología de innovación cultural que aporta al trabajo colaborativo de los agentes del ecosistema artístico y cultural promoviendo el relacionamiento activo, dinámico y corresponsable para cooperar articuladamente en la promoción y fortalecimiento de iniciativas, acciones y proyectos.",
+        "image":"",
         "url": ""
     },
     {
         "title": "Artífices",
         "description": "Es una estrategia que busca descentralizar, democratizar y territorializar, dirigida a la formación artística y cultural, que desarrolla capacidades en agentes del sector cultural y artístico a partir del acompañamiento y entrega de herramientas para la formulación y gestión de proyectos comunitarios, con un enfoque territorial y poblacional. En esta estrategia confluyen el trabajo en territorio articulado entre las áreas de: Sectores Sociales, la [Línea de Arte y Memoria sin Fronteras](https://www.idartes.gov.co/lineas-estrategicas/emprendimiento-e-industrias-culturales) y la [Línea de Sostenibilidad del Ecosistema Artístico](https://www.idartes.gov.co/lineas-estrategicas/emprendimiento-e-industrias-culturales) del Idartes.",
+        "image":"/images/programas_sostenibilidad/artifices.jpg",
         "url": "https://www.idartes.gov.co/es/noticias/artifices-escuela-gestion-cultural-comunitaria"
     }
 ]
